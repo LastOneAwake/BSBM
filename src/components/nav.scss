@@ -1,5 +1,4 @@
-
-@import '../global.scss';
+@import '../variables';
 
 
 #nav{
@@ -7,19 +6,37 @@
     width: 90vw;
     max-width: 100%;
 
-    border-bottom: solid 1px black;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    top:0;
-    padding: .5em 0;   
+    top:0;  
+    
     .navItem {
         flex:1;
         padding: 0 .25em;
-        font-size: 1.4em;
-        &:not(:nth-child(5)){
-            border-right: solid 1px black;
+        background-color: rgba(0,0,0, .25);
+        height:100%;
+        padding:1em 0;
+        &:first-child{
+            border-bottom-left-radius: 15px;
         }
+        &:last-child{
+            border-bottom-right-radius: 15px;
+        }
+        &:last-child{
+        .navTextHolder{
+            border-right: 0;
+        }
+    }
+        .navTextHolder{
+            font-size: 1.4em;
+            color: white;
+            text-shadow: 1px 1px 1px rgba(0,0,0, .25);
+            text-align: center;
+            width:100%;
+            border-right: solid 1px $lightTextColor;     
+        }
+    
     }
 }

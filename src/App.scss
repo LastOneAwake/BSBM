@@ -1,5 +1,7 @@
+@import 'variables';
+
 body{
-  background: linear-gradient(#d3cac0, rgb(255, 251, 244));
+  background: linear-gradient(125deg, $lightPink, $darkGrey);
 }
 
 .App {
