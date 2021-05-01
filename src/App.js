@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import Nav from './components/Nav';
-import './App.css';
+import Splash from './components/Splash';
+import './App.scss';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <Splash/>
 
     </div>
   );
