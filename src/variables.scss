@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500&family=Work+Sans:wght@100&display=swap');
 
 $lightTextColor: rgb(231, 231, 231);
 $darkTextColor: rgb(71, 71, 71);
@@ -6,3 +7,26 @@ $lightPurple: #CBC0D3;
 $darkPink: #fff2c4;
 $lightPink: #fff0d4;
 $lightBlue: #DEE2FF;
+
+$gradient: linear-gradient(45deg, rgba(rgb(172, 85, 99), 1), rgba(rgb(77, 130, 165), 1), rgba(rgb(160, 48, 117), 1) );
+
+$generalFont: 'Work Sans', sans-serif;
+$sansFont:  'Josefin Sans', sans-serif;
+
+@keyframes gradient {
+    0% {
+        background-position: 100% 0%;;
+    }
+    25% {
+        background-position: 70% 75%;
+    }
+    50% {
+        background-position: 10% 50%
+    }
+    75% {
+        background-position: 30% 5%;
+    }
+    100% {
+        background-position: 100% 0%;      
+    }
+}

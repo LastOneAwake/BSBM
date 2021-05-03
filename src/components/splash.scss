@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
 
     #splashGradientBG {
-        background: linear-gradient(45deg, rgba(rgb(172, 85, 99), 1), rgba(rgb(77, 130, 165), 1), rgba(rgb(105, 16, 156), 1) );
+        background: $gradient;
         background-size: 250% 250%;
         animation: gradient 20s linear infinite;
         position: absolute;
@@ -16,7 +16,7 @@
         height: 100%;
         width: 100%;
         z-index: 1;
-        opacity: .2;
+        opacity: .35;
     }
     .bgShape {
         background: rgba(255, 255, 255, 0.5);
@@ -27,20 +27,4 @@
     }
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    25% {
-        background-position: 30% 75%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-    75% {
-        background-position: 30% 5%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+

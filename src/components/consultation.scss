@@ -1,0 +1,34 @@
+@import "../variables";
+#consultation {
+    background: $darkGrey;
+    flex-direction: row;
+    #consultationText {
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        flex: .5;
+        #consultationHeader {
+            width: 100%;
+            flex: 0.25;
+            background: linear-gradient(145deg, rgb(226, 177, 185), rgb(207, 127, 141));
+            color: $lightTextColor;
+            font-family: $sansFont;
+            font-size: 3em;
+            text-shadow: 3px 3px 9px rgba(black, 0.35);
+            justify-content: center;
+            align-items: center;
+        }
+        #consultationImg {
+            background: url("../assets/bgImage/fitBack.jpg");
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    #formholder {
+        background: $gradient;
+        background-size: 300% 300%;
+        height: 100%;
+        animation: gradient 30s linear infinite;
+    }
+}
