@@ -6,7 +6,7 @@
         height: 100%;
         flex-direction: column;
         display: flex;
-        flex: .5;
+        flex: 0.5;
         #consultationHeader {
             width: 100%;
             flex: 0.25;
@@ -17,12 +17,14 @@
             text-shadow: 3px 3px 9px rgba(black, 0.35);
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
         #consultationImg {
             background: url("../assets/bgImage/fitBack.jpg");
             height: 100%;
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
     }
     #formholder {
@@ -30,5 +32,74 @@
         background-size: 300% 300%;
         height: 100%;
         animation: gradient 30s linear infinite;
+
+        form {
+            flex-direction: column;
+            height: 80%;
+
+            border-radius: 20px;
+            border: solid 2px $lightTextColor;
+
+            #serviceSelectionHeader {
+                font-family: $sansFont;
+                font-size: 1.65em;
+                color: $lightTextColor;
+            }
+            #serviceHolder {
+                padding: 1em 1em;
+                .formService {
+                    cursor: pointer;
+                    font-size: 1.25em;
+                    font-family: $sansFont;
+                    color: $lightTextColor;
+                    font-weight: 500;
+                    background-color: rgba($lightTextColor, 0.25);
+                    padding: 1em 2em;
+                    border-radius: 10px;
+                    &:nth-child(2) {
+                        margin: 0 1em;
+                    }
+                    transition: background-color 0.35s;
+                    &:hover {
+                        background-color: rgba($lightTextColor, 0.5);
+                    }
+                    &.selected {
+                        background-color: $lightGreen;
+                    }
+                }
+            }
+            .formInput {
+                padding: 1em;
+                flex-direction: column;
+                label {
+                    font-family: $generalFont;
+                    font-size: 2em;
+                    color: $lightTextColor;
+                }
+                input {
+                    margin-top: 0.5em;
+                    width: 15em;
+                    font-size: 1.25em;
+                    padding: 0.25em;
+                    padding-left: 0.5em;
+                    border-radius: 5px;
+                    border: 0;
+                    box-shadow: 2px 3px 6px rgba(black, 0.5);
+                }
+            }
+            button {
+                margin-top: 1em;
+                font-size: 1.5em;
+                padding: 0.35em 1.25em;
+                border-radius: 10px;
+                border: 0;
+                box-shadow: 2px 1px 8px rgba(black, 0.35);
+                font-family: $sansFont;
+                color: $lightTextColor;
+                background: rgb(112, 179, 112);
+                border: solid 2px $lightTextColor;
+                text-shadow: 2px 2px 4px rgba(black, 0.25);
+            }
+        }
     }
 }

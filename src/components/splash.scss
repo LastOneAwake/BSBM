@@ -4,7 +4,7 @@
     background-image: url("../assets/bgImage/upper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-
+background-attachment: fixed;
     #splashGradientBG {
         background: $gradient;
         background-size: 250% 250%;
