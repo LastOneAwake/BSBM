@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+#emsculpt {
+    #emsculptHeader {
+        flex: .5;
+        height:100%;
+        box-sizing: border-box;
+        padding:1em;
+        align-items: flex-start;
+        padding-top: 10em;
+        #emsculptShape {
+            background: rgba($lightTextColor, .5);
+            height:50%;
+            border: solid 2px white;
+            padding: 0 2em;
+            font-size: 3em;
+            box-shadow: 4px 4px 9px rgba(black, .5);
+        }
+    }
+
+    #emsculptText {
+        flex-direction: column;
+        p{
+            flex: 1;
+            color: $lightTextColor;
+            font-family: $generalFont;
+            font-size: 1.5em;;
+            padding: 1em 2em;
+            margin: 0;
+        }
+    }
+}

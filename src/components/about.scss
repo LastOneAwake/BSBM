@@ -1,32 +1,35 @@
 @import "../variables.scss";
 
 #about {
-    border-top:solid 2px $lightTextColor;
-    border-bottom:solid 2px $lightTextColor;
+    border-top: solid 2px $lightTextColor;
+    border-bottom: solid 2px $lightTextColor;
     flex-direction: column;
 
     .aboutText {
         .aboutHeaderBlock {
-            display:flex;
+            display: flex;
             flex: 0.35;
             font-family: $sansFont;
             color: $lightTextColor;
             font-size: 3.5em;
             box-sizing: border-box;
-            text-shadow: 3px 3px 6px rgba(0,0,0, .45);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.45);
+            border: solid 2px white;
+            box-sizing: border-box;
+            border-radius: 5px;
         }
         p {
             flex: 1;
             color: $lightTextColor;
             font-family: $generalFont;
-            font-size: 1.5em;;
+            font-size: 1.5em;
             padding: 1em 2em;
             margin: 0;
         }
     }
     #aboutTopText {
         box-sizing: border-box;
-        border-bottom:solid 2px $lightTextColor;
+        border-bottom: solid 2px $lightTextColor;
         .aboutHeaderBlock {
             background: linear-gradient(125deg, rgb(140, 96, 180), rgb(135, 63, 252));
             border-right: solid 2px $lightTextColor;
@@ -34,7 +37,6 @@
         p {
             background: linear-gradient(-125deg, rgb(197, 100, 153), rgb(135, 63, 252));
         }
-
     }
     #aboutBottomText {
         .aboutHeaderBlock {
