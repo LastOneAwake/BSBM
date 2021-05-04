@@ -3,7 +3,7 @@ import './consultation.scss';
 
 export default function Consultation() {
     const [emailVal, updateEmailVal] = useState('');
-    const [naemVal, updateNameVal] = useState('');
+    const [nameVal, updateNameVal] = useState('');
     const [numberVal, updateNumberVal] = useState('');
 
     return (
@@ -21,9 +21,35 @@ export default function Consultation() {
                         <div className='formService'>EMSculpt</div>
                         <div className='formService'>General Inqury</div>
                     </div>
-                    <div className='formInput centeredFlex'><label>Name</label><input type='text'></input></div>
-                    <div className='formInput centeredFlex'><label>PhoneNumber</label><input type='text'></input></div>
-                    <div className='formInput centeredFlex'><label>Email</label><input type='number'></input></div>
+                    <div className='formInput centeredFlex'>
+                        <label>Name</label>
+                        <input 
+                        type='text' 
+                        value={nameVal}
+                        onChange={e=>{
+                            updateNameVal(e.target.value);
+                        }}
+                        /></div>
+                    <div className='formInput centeredFlex'>
+                        <label>PhoneNumber</label>
+                        <input 
+                        type='text'
+                        value={numberVal}
+                        onChange={e=>{
+                            updateNumberVal(e.target.value);
+                        }}
+                        />
+                    </div>
+                    <div className='formInput centeredFlex'>
+                        <label>Email</label>
+                        <input 
+                        type='text' 
+                        value={emailVal}
+                        onChange={e=>{
+                            updateEmailVal(e.target.value);
+                        }}
+                        />
+                    </div>
                     <button >Send</button>
                 </form>
             </div>

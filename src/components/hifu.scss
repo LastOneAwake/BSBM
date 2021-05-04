@@ -1,0 +1,57 @@
+@import "../variables.scss";
+
+#hifu {
+    .hifuSection {
+        height: 100%;
+        box-sizing: border-box;
+        color: $lightTextColor;
+    }
+    #hifuLeftSide {
+        background-image: linear-gradient(to bottom, rgb(26, 26, 26), rgba(117, 19, 93, 0.5)),
+            url("../assets/bgImage/clearSkinBack.jpg");
+        background-size: cover;
+        font-family: $sansFont;
+        color: $lightTextColor;
+        font-size: 2.6em;
+        border-right: solid 2px rgba($lightTextColor, 0.5);
+        flex: 0.35;
+        padding: 0 1em;
+    }
+    #hifuMiddle {
+        background: linear-gradient(45deg, rgba(163, 50, 50, 0.5), rgba(117, 19, 93, 0.75));
+        border-right: solid 2px rgba($lightTextColor, 0.5);
+
+        p {
+            padding: 0 0.5em;
+            font-size: 1.45em;
+
+            text-shadow: 2px 3px 3px rgba(black, 0.25);
+        }
+    }
+    .focus {
+        font-family: $sansFont;
+        font-weight: 500;
+        text-decoration: underline;
+        padding: 0.15em 0;
+    }
+    #hifuRightSide {
+        background: linear-gradient(230deg, rgba(163, 50, 50, 0.5), rgba(117, 19, 93, 0.75));
+        flex: 0.65;
+        padding: 0 0.5em;
+        font-size: 1.35em;
+        text-shadow: 2px 3px 3px rgba(black, 0.25);
+        .focus{
+            font-size: 1.5em;
+            text-decoration: none;
+
+        }
+        ul{
+            text-align: left;
+            li{
+                margin-bottom: .5em;
+            }
+        }
+    }
+
+    
+}

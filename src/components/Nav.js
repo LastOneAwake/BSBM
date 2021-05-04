@@ -1,11 +1,11 @@
 import React from 'react';
-import style from './nav.scss';
+import './nav.scss';
 
 export default function Nav({ scrollPos }) {
 
     const navClasses = scrollPos === 0 ? 'top' : '';
     return (
-        <div id='nav'>
+        <div id='nav' className={navClasses}>
             <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>Consultation</span>
             </div>
