@@ -1,32 +1,44 @@
-@import '../variables.scss';
+@import "../variables.scss";
 
 #emsculpt {
+    background-color: black;
+    background: linear-gradient(90deg, rgba($darkPink, .15), rgba(117, 19, 93, 0.75));
+
     #emsculptHeader {
-        flex: .5;
-        height:100%;
+        flex: 0.5;
+        height: 100%;
         box-sizing: border-box;
-        padding:1em;
-        align-items: flex-start;
-        padding-top: 10em;
-        #emsculptShape {
-            background: rgba($lightTextColor, .5);
-            height:50%;
-            border: solid 2px white;
-            padding: 0 2em;
-            font-size: 3em;
-            box-shadow: 4px 4px 9px rgba(black, .5);
-        }
+        padding: 1em;
+
+        font-family: $sansFont;
+        color: $lightTextColor;
+        font-size: 3em;
+
+        background-image: linear-gradient(to bottom, rgb(26, 26, 26), rgba(117, 19, 93, 0.5)),
+            url("../assets/generalImages/bwFullbody.jpg");
+        background-size: cover;
+        border-right: solid 2px $lightTextColor;
     }
 
     #emsculptText {
         flex-direction: column;
-        p{
+        padding: 0 2em;
+        box-sizing: border-box;
+        #desc {
             flex: 1;
             color: $lightTextColor;
             font-family: $generalFont;
-            font-size: 1.5em;;
+            font-size: 1.5em;
             padding: 1em 2em;
             margin: 0;
+            text-shadow: 2px 2px 6px rgba(black, .25);
+
+        }
+        #situps{
+            font-size: 1.65em;
+            border-bottom: solid 2px $lightTextColor;
+            color: $lightTextColor;
+            text-shadow: 2px 2px 6px rgba(black, .25);
         }
     }
 }
