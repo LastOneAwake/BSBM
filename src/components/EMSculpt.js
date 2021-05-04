@@ -27,7 +27,7 @@ export default function EMSculpt() {
                     It responds with a deep remodeling of its inner structure that results in muscle building and sculpting your body.
                 </p>
                 <p id='situps'>
-                    30 minutes treatment = 20,000 times sit ups.
+                    A single 30 minute treatment = 20,000 sit ups
                   </p>
             </div>
 

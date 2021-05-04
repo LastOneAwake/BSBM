@@ -2,6 +2,7 @@
 #consultation {
     background: $darkGrey;
     flex-direction: row;
+    border-top: solid 2px $lightTextColor;
     #consultationText {
         height: 100%;
         flex-direction: column;
@@ -28,6 +29,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            border: solid 3px rgba($lightTextColor, 0.5);
         }
     }
     #formholder {
