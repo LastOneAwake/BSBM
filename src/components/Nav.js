@@ -4,6 +4,7 @@ import './nav.scss';
 export default function Nav({ scrollPos }) {
 
     const navClasses = scrollPos === 0 ? 'top' : '';
+    console.log(scrollPos);
     return (
         <div id='nav' className={navClasses}>
             <div className='navItem centeredFlex'>

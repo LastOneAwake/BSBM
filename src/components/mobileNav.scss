@@ -1,0 +1,30 @@
+@import "../variables";
+
+
+#mobileNavButton{
+ height: 3.5em;
+ width:3.5em;
+ background-image: $gradient;
+ background-size: 500% 500%;
+ animation: gradient 20s linear infinite;
+ position:absolute;
+ bottom: 1em;
+ right: 1em;
+ border-radius: 50%;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ box-shadow: 2px 3px 9px rgba(black, .5);
+ border: solid 2px $lightTextColor;
+    span{
+        background-color: white;
+        height:.25em;
+        width:60%;
+        display:flex;
+        border-radius: 5px;
+        &:nth-child(2){
+            margin: .35em 0;
+        }
+    }
+}
