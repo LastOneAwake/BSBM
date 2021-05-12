@@ -1,11 +1,11 @@
 import React from 'react';
 import './about.scss';
 
-export default function About() {
+export default function About({mobileView}) {
 
     return (
-        <div id='about' className='fullPageSection centeredFlex'>
-            <div id='aboutTopText' className='aboutText flex1'>
+        <div id='about' className='centeredFlex'>
+            <div id='aboutTopText' className='aboutText '>
                 <div className='aboutHeaderBlock centeredFlex'>Who?</div>
                 <p className='centeredFlex'>
                     I am a registered nurse, certified in Body Sculpting, Body Contouring, and Wooden Therapy.
@@ -15,8 +15,8 @@ export default function About() {
                     treatment plan that is unique to them, and helping them to look their best!
                 </p>
             </div>
-            <div id='aboutBottomText' className='aboutText flex1'>
-
+            <div id='aboutBottomText' className='aboutText '>
+            {mobileView && <div className='aboutHeaderBlock centeredFlex'>What and How?</div> }
                 <p className='centeredFlex'>
                     My goal is always to provide my clients with the results they need.
                     This is accomplished by combining various services, including Ultrasonic and Laser Lipo Cavitation, to liquify fat cells. 
@@ -26,7 +26,7 @@ export default function About() {
                     We specialize in CoolSculpting, SculpSure, HIFU/Ultherapy, Wooden Therapy, and Laser Lipo Cavitation.
                     I only offer treatments that are non-surgical and FDA Approved for permanent fat reduction by way of freezing and killing visible fat cells.
                 </p>
-                <div className='aboutHeaderBlock centeredFlex'>What and How?</div>
+                {!mobileView && <div className='aboutHeaderBlock centeredFlex'>What and How?</div> }
             </div>
         </div>
 

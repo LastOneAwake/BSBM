@@ -1,50 +1,70 @@
 @import "../variables.scss";
 
 #about {
-    border-top:solid 2px $lightTextColor;
-    border-bottom:solid 2px $lightTextColor;
+    border-top: solid 2px $lightTextColor;
+    border-bottom: solid 2px $lightTextColor;
     flex-direction: column;
 
     .aboutText {
+        flex-direction: row;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
         .aboutHeaderBlock {
-            display:flex;
-            flex: 0.35;
+            display: flex;
+
             font-family: $sansFont;
             color: $lightTextColor;
             font-size: 3.5em;
             box-sizing: border-box;
-            text-shadow: 3px 3px 6px rgba(0,0,0, .45);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.45);
             border-left: solid 2px white;
-            border-right: solid 2px white;            
+            border-right: solid 2px white;
+            padding: 0.5em;
+            box-sizing: border-box;
+            @media screen and (max-width: 1000px) {
+                border: solid 2px $lightTextColor;
+                border-top: 0;
+                font-size: 3em;
+                flex: unset;
+            }
         }
         p {
             flex: 1;
             color: $lightTextColor;
             font-family: $generalFont;
-            font-size: 1.5em;;
+            font-size: 1.5em;
             padding: 1em 2em;
             margin: 0;
+            @media screen and (max-width: 1000px) {
+                text-align: left;
+                font-size: 1.25em;
+            }
         }
     }
     #aboutTopText {
         box-sizing: border-box;
-        border-bottom:solid 2px $lightTextColor;
+        border-bottom: solid 2px $lightTextColor;
+        display: flex;
         .aboutHeaderBlock {
-            background: linear-gradient(125deg, rgb(140, 96, 180), rgb(135, 63, 252));
+            background: linear-gradient(45deg, rgb(166, 96, 180), rgb(135, 63, 252));
             border-right: solid 2px $lightTextColor;
         }
         p {
             background: linear-gradient(-125deg, rgb(197, 100, 153), rgb(135, 63, 252));
         }
-
     }
     #aboutBottomText {
+        display: flex;
+
         .aboutHeaderBlock {
-            background: linear-gradient(125deg, rgb(140, 96, 180), rgb(135, 63, 252));
+            background: linear-gradient(-45deg, rgb(166, 96, 180), rgb(135, 63, 252));
             border-left: solid 2px $lightTextColor;
         }
         p {
-            background: linear-gradient(-125deg, rgb(140, 96, 180), rgb(135, 63, 252));
+            background: linear-gradient(25deg, rgb(197, 100, 153), rgb(135, 63, 252));
+
+
         }
     }
 }

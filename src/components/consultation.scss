@@ -1,27 +1,23 @@
 @import "../variables";
 #consultation {
     background: $darkGrey;
-    flex-direction: row;
+    flex-direction: column;
     border-top: solid 2px $lightTextColor;
     #consultationText {
-        height: 100%;
-        flex-direction: column;
-        display: flex;
-        flex: 0.5;
+        width: 100%;
         #consultationHeader {
-            width: 100%;
-            flex: 0.25;
+
             background: linear-gradient(145deg, rgb(226, 177, 185), rgb(207, 127, 141));
             color: $lightTextColor;
             font-family: $sansFont;
-            font-size: 3em;
+            font-size: 2em;
             text-shadow: 3px 3px 9px rgba(black, 0.35);
             justify-content: center;
             align-items: center;
             text-align: center;
             border: solid 3px rgba($lightTextColor, 0.5);
             box-sizing: border-box;
-            border-radius: 5px;
+            padding: .5em;
         }
         #consultationImg {
             background: url("../assets/bgImage/fitBack.jpg");
@@ -33,17 +29,17 @@
         }
     }
     #formholder {
+        width: 100%;
+        padding: 4em 0;
         background: $gradient;
         background-size: 300% 300%;
-        height: 100%;
         animation: gradient 30s linear infinite;
-
         form {
             flex-direction: column;
             height: 80%;
 
-            border-radius: 20px;
-            border: solid 2px $lightTextColor;
+            // border-radius: 20px;
+            // border: solid 2px $lightTextColor;
 
             #serviceSelectionHeader {
                 font-family: $sansFont;
@@ -53,23 +49,29 @@
             #serviceHolder {
                 padding: 1em 1em;
                 .formService {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
                     cursor: pointer;
                     font-size: 1.25em;
+                    min-height: 2em;
                     font-family: $sansFont;
                     color: $lightTextColor;
                     font-weight: 500;
                     background-color: rgba($lightTextColor, 0.25);
-                    padding: 1em 2em;
+                    padding: .5em 1em;
+                    border: solid 2px transparent;
                     border-radius: 10px;
+                    user-select: none;
                     &:nth-child(2) {
-                        margin: 0 1em;
+                        margin-left: .5em;
                     }
-                    transition: background-color 0.35s;
-                    &:hover {
-                        background-color: rgba($lightTextColor, 0.5);
-                    }
+                    transition: background-color 0.35s, border-color .3s;
+             
                     &.selected {
+                    border: solid 2px rgba($lightTextColor, 0.75);
                         background-color: $lightGreen;
+
                     }
                 }
             }
@@ -89,7 +91,7 @@
                     padding-left: 0.5em;
                     border-radius: 5px;
                     border: 0;
-                    box-shadow: 2px 3px 6px rgba(black, 0.5);
+                    box-shadow: 2px 3px 6px rgba(black, 0.25);
                 }
             }
             button {

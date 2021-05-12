@@ -16,13 +16,24 @@ function App() {
       {!mobileView && <Nav />}
       {mobileView && <MobileNavButton />}
       <Splash />
-      <Consultation />
-      <About />
+      <About mobileView={mobileView}/>
+       {/* <Consultation /> */}
+      {/* 
       <EMSculpt />
-      <HIFU />
+      <HIFU />  */}
 
     </div>
   );
 }
 
 export default App;
+
+
+
+/**
+ * about
+ * services
+ * special
+ * review
+ * contact
+ */
