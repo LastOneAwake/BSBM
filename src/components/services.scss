@@ -1,0 +1,35 @@
+@import "../variables.scss";
+
+#services {
+    background-image: linear-gradient(rgba(black, 0.15), rgba(black, 0.25)),
+        url("../assets/bgImage/blueBikiniFrontUp.jpg");
+    background-size: cover;
+    flex-direction: column;
+    background-attachment: fixed;
+    #servicesHeader {
+        font-size: $headerFontsize;
+        padding: 0.5em;
+        color: $lightTextColor;
+        border-bottom: solid 2px $lightTextColor;
+        background-color: rgba($lightTextColor, .25);
+        @media screen and (max-width: $mobileCutoff) {
+            font-size: $mobile_HeaderFontsize;
+        }
+    }
+
+    ul{
+        list-style: none;
+        display:flex;
+        flex:1;
+        flex-direction: column;
+        align-items: center;
+        li{
+            font-size: $fontSize;
+            color: $lightTextColor;
+            margin: .5em 0;
+            .desc{
+                font-size: .5em;
+            }
+        }
+    }
+}

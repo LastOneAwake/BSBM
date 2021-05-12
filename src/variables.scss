@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500&family=Work+Sans:wght@300;400&display=swap");
 
+$mobileCutoff: 1000px;
+
 $lightTextColor: rgb(231, 231, 231);
 $darkTextColor: rgb(71, 71, 71);
 $darkGrey: #8e9aaf;
 $lightPurple: #cbc0d3;
-$darkPink: #fff2c4;
+$darkPink: #ac5799;
 $lightPink: #fff0d4;
 $lightBlue: #dee2ff;
 $lightGreen: rgb(135, 187, 135);
@@ -13,6 +15,10 @@ $gradient: linear-gradient(45deg, rgba(rgb(172, 85, 99), 1), rgba(rgb(77, 130, 1
 
 $generalFont: "Work Sans", sans-serif;
 $sansFont: "Josefin Sans", sans-serif;
+$headerFontsize: 3.5em;
+$fontSize: 1.5em;
+$mobile_HeaderFontsize: 2.5em;
+$mobile_fontSize: 1.25em;
 
 @keyframes gradient {
     0% {

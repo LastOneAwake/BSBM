@@ -3,6 +3,7 @@ import MobileNavButton from './components/MobileNav';
 import Splash from './components/Splash';
 import Consultation from './components/Consultation';
 import About from './components/About';
+import Services from './components/Services';
 import EMSculpt from './components/EMSculpt';
 import HIFU from './components/HIFU';
 
@@ -17,6 +18,7 @@ function App() {
       {mobileView && <MobileNavButton />}
       <Splash />
       <About mobileView={mobileView}/>
+      <Services />
        {/* <Consultation /> */}
       {/* 
       <EMSculpt />
@@ -31,7 +33,7 @@ export default App;
 
 
 /**
- * about
+ * about /rendering 
  * services
  * special
  * review

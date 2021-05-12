@@ -7,7 +7,7 @@
 
     .aboutText {
         flex-direction: row;
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: $mobileCutoff) {
             flex-direction: column;
         }
         .aboutHeaderBlock {
@@ -15,17 +15,17 @@
 
             font-family: $sansFont;
             color: $lightTextColor;
-            font-size: 3.5em;
+            font-size: $headerFontsize;
             box-sizing: border-box;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.45);
             border-left: solid 2px white;
             border-right: solid 2px white;
             padding: 0.5em;
             box-sizing: border-box;
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: $mobileCutoff) {
                 border: solid 2px $lightTextColor;
                 border-top: 0;
-                font-size: 3em;
+                font-size: $mobile_HeaderFontsize;
                 flex: unset;
             }
         }
@@ -33,12 +33,12 @@
             flex: 1;
             color: $lightTextColor;
             font-family: $generalFont;
-            font-size: 1.5em;
+            font-size: $fontSize;
             padding: 1em 2em;
             margin: 0;
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: $mobileCutoff) {
                 text-align: left;
-                font-size: 1.25em;
+                font-size: $mobile_fontSize;
             }
         }
     }
