@@ -3,10 +3,10 @@
     background: $darkGrey;
     flex-direction: column;
     border-top: solid 2px $lightTextColor;
+    width: 100%;
     #consultationText {
         width: 100%;
         #consultationHeader {
-
             background: linear-gradient(145deg, rgb(226, 177, 185), rgb(207, 127, 141));
             color: $lightTextColor;
             font-family: $sansFont;

@@ -6,6 +6,9 @@
     background-size: cover;
     flex-direction: column;
     background-attachment: fixed;
+    @media screen and (min-width: 1001px) {
+     min-height:100vh;       
+    }
     #servicesHeader {
         font-size: $headerFontsize;
         padding: 0.5em;
@@ -22,13 +25,22 @@
         display:flex;
         flex:1;
         flex-direction: column;
-        align-items: center;
+        @media screen and (min-width: 1001px) {
+            justify-content: space-around;
+           }   
         li{
             font-size: $fontSize;
+            @media screen and (min-width: 1001px) {
+                font-size: 1.75em
+               }  
             color: $lightTextColor;
             margin: .5em 0;
+            
             .desc{
                 font-size: .6em;
+                @media screen and (min-width: 1001px) {
+                    font-size: .75em
+                   }   
             }
         }
     }
