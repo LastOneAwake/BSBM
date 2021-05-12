@@ -80,13 +80,13 @@
                 flex-direction: column;
                 label {
                     font-family: $generalFont;
-                    font-size: 2em;
+                    font-size: $fontSize;
                     color: $lightTextColor;
                 }
                 input {
                     margin-top: 0.5em;
                     width: 15em;
-                    font-size: 1.25em;
+                    font-size: 1.15em;
                     padding: 0.25em;
                     padding-left: 0.5em;
                     border-radius: 5px;

@@ -11,7 +11,7 @@ export default function Consultation() {
 
 
     return (
-        <div id='consultation' className='fullPageSection'>
+        <div id='consultation' className='centeredFlex'>
             <div id='consultationText' className=''>
                 <div id='consultationHeader' className='sectionHeader'>Schedule a consultation now!</div>
                 {/* <div id='consultationImg' className='flex1'></div> */}

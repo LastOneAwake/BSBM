@@ -1,7 +1,7 @@
 import Nav from './components/Nav';
 import MobileNavButton from './components/MobileNav';
 import Splash from './components/Splash';
-// import Consultation from './components/Consultation';
+import Consultation from './components/Consultation';
 import About from './components/About';
 import Services from './components/Services';
 // import EMSculpt from './components/EMSculpt';
@@ -19,7 +19,7 @@ function App() {
       <Splash />
       <About mobileView={mobileView}/>
       <Services />
-       {/* <Consultation /> */}
+       <Consultation />
       {/* 
       <EMSculpt />
       <HIFU />  */}
