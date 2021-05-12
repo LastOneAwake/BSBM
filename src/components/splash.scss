@@ -6,6 +6,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
+    @media screen and (max-width: $mobileCutoff) {
+        background-attachment: scroll;
+        background-position: center;
+    }
     #splashGradientBG {
         background: $gradient;
         background-size: 250% 250%;
