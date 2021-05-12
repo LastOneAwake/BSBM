@@ -11,15 +11,15 @@ export default function Services() {
                 <li>CoolSculpting
                     <br />
                     <span className='desc'>
-                        FDA-cleared for the treatment of visible
-                        fat bulges in the submental (under the chin) and submandibular (under the jawline) areas, thigh, abdomen, and flank,
-                        along with bra fat, back fat, underneath the buttocks (also known as banana roll), and upper arm
+                        An FDA-cleared treatment for visible fat bulges in the submental 
+                        (under the chin) and submandibular (under the jawline) areas, thigh, abdomen, and flank,
+                        along with bra fat, back fat, underneath the buttocks (also known as banana roll), and upper arm.
                     </span>
                 </li>
                 <li>SculpSure
                     <br />
                     <span className='desc'>
-                        Non-invasive laser body contouring that helps you achieve
+                        A non-invasive laser body contouring that helps you achieve
                         a slimmer, more natural-looking appearance. No surgery.
                         No downtime. Just results.
                     </span>
@@ -28,21 +28,20 @@ export default function Services() {
                 <li>Ultherapy/HIFU
                     <br />
                     <span className='desc'>
-
-                        non surgical skin lift, winkle free, and tighten, eyes/brows lift, chin and neck tighten
+                        A non-surgical skin lift, to tighten skin around eyes and browsm, and to lift the chin, tighten the neck and reduce wrinkles
                     </span>
                 </li>
                 <li>EMS SCULPT
                     <br />
                     <span className='desc'>
-                        build muscle and sculpt your body.
-                        Through the high intensity electromagnetic therapy procedure one can enlarge current muscles, as well as grow new muscle fibers
+                        Build muscle and sculpt your body through the high intensity electromagnetic therapy.
+                        This procedure one can enlarge current muscles, as well as grow new muscle fibers
                     </span>
                 </li>
                 <li>Butt & Breast lift
                 <br />
                     <span className='desc'>
-                        Excess skin and fat from aging, heredity factors, or after dramatic weight loss in the given area can be drastically improved with a lift
+                        Treatment for excess skin and fat from aging, heredity factors, or the results after dramatic weight loss. Appearance will dramatically improve after a life.
                     </span>
 
                 </li>
@@ -55,7 +54,7 @@ export default function Services() {
                     <br />
 
                     <span className='desc'>
-                        a body contouring treatment that is used to remove fat deposits under your skin.
+                        A body contouring treatment that is used to remove fat deposits under your skin.
                         </span>
                 </li>
             </ul>
