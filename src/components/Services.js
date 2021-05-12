@@ -5,7 +5,7 @@ export default function Services() {
 
 
     return (
-        <div id='services' className='fullPageSection flex1'>
+        <div id='services' className=' flex1'>
             <div id='servicesHeader' className='centeredFlex'>Services</div>
             <ul>
                 <li>CoolSculpting
