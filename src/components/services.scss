@@ -11,14 +11,15 @@
         font-size: 6em;
         background-position: bottom;;
         background-size: cover;
+        margin-bottom: 1em;
     }
     #servicesBody {
-        padding: 2em 2.55em;
-
+        padding: 2em 1.5em;
+  
         .serviceItem {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             margin-bottom: 3em;
             .serviceIcon {

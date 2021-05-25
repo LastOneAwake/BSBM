@@ -57,7 +57,10 @@ export default function Services() {
             <div id='servicesBody'>
                 {services.map(serviceObj => {
                     return (
-                        <div className='serviceItem'>
+                        <div
+                            className='serviceItem'
+                            key={serviceObj.service}
+                        >
                             <img src={serviceObj.icon} className='serviceIcon' />
                             <div className='serviceText'>
                                 <div className='serviceName'>{serviceObj.service}</div>

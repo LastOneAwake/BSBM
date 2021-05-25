@@ -4,7 +4,7 @@ import Splash from './components/Splash';
 import Consultation from './components/Consultation';
 import About from './components/About';
 import Services from './components/Services';
-// import EMSculpt from './components/EMSculpt';
+import Specials from './components/Specials';
 // import HIFU from './components/HIFU';
 
 import './App.scss';
@@ -19,6 +19,7 @@ function App() {
       <Splash />
       <About mobileView={mobileView}/>
       <Services />
+      <Specials />
        <Consultation />
       {/* 
       <EMSculpt />
