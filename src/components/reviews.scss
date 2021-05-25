@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+#reviews {
+    background-color: white;
+    #reviewsHeader {
+        background: url("../assets/images/BGS/reviewsBG.jpg");
+        height: 5em;
+        color: white;
+        font-family: $headerFont;
+        font-size: 4em;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.35em;
+        text-align: center;
+        line-height: 1.25em;
+    }
+    #reviewsBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em 3em;
+        .reviewDetails {
+            margin-bottom: 2.5em;
+            .reviewerReview {
+                font-size: 1.825em;
+                font-family: $sansFont;
+            }
+
+        .reviewerName{
+            font-family: $headerFont;
+            font-size: 2em;
+        }
+        }
+    }
+}

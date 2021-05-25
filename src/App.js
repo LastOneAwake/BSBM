@@ -5,6 +5,7 @@ import Consultation from './components/Consultation';
 import About from './components/About';
 import Services from './components/Services';
 import Specials from './components/Specials';
+import Reviews from './components/Reviews';
 // import HIFU from './components/HIFU';
 
 import './App.scss';
@@ -17,14 +18,11 @@ function App() {
       {!mobileView && <Nav />}
       {mobileView && <MobileNavButton />}
       <Splash />
-      <About mobileView={mobileView}/>
+      <About mobileView={mobileView} />
       <Services />
       <Specials />
-       <Consultation />
-      {/* 
-      <EMSculpt />
-      <HIFU />  */}
-
+      <Reviews />
+      <Consultation />
     </div>
   );
 }
@@ -34,7 +32,7 @@ export default App;
 
 
 /**
- * about /rendering 
+ * about /rendering
  * services
  * special
  * review
