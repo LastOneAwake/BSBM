@@ -3,15 +3,15 @@
 #services {
     flex-direction: column;
     background-color: white;
+    width:100%;
     #servicesHeader {
         background: url('../assets/images/BGS/servicesBG.jpg');
         height:3em;
         color:white;
         font-family: $headerFont;
         font-size: 6em;
-        background-position: bottom;;
+        background-position: center;
         background-size: cover;
-        margin-bottom: 1em;
     }
     #servicesBody {
         padding: 2em 1.5em;

@@ -14,7 +14,7 @@ export default function About({ mobileView }) {
                 </p>
             </div>
             <div id='aboutBottomText' className='aboutText '>
-                <div className='aboutHeaderBlock'>What and How?</div>
+                <div className='aboutHeaderBlock'>How We Do it</div>
                 <p className='firstBlock'>
                     We specialize in non-surgical, FDA
                     approved treatments for permanent fat
