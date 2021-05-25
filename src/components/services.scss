@@ -1,49 +1,41 @@
 @import "../variables.scss";
 
 #services {
-    background-image: linear-gradient(rgba(black, 0.35), rgba(black, 0.45)),
-        url("../assets/bgImage/blueBikiniFrontUp.jpg");
-    background-size: cover;
     flex-direction: column;
-    background-attachment: fixed;
-    @media screen and (max-width: $mobileCutoff) {
-        background-attachment: scroll;
-        background-position: center;
-    }
-    @media screen and (min-width: 1001px) {
-        min-height: 100vh;
-    }
+    background-color: white;
     #servicesHeader {
-        font-size: $headerFontsize;
-        padding: 0.5em;
-        color: $lightTextColor;
-        border-bottom: solid 2px $lightTextColor;
-        background-color: rgba($lightTextColor, 0.25);
-        @media screen and (max-width: $mobileCutoff) {
-            font-size: $mobile_HeaderFontsize;
-        }
+        background: url('../assets/images/BGS/servicesBG.jpg');
+        height:3em;
+        color:white;
+        font-family: $headerFont;
+        font-size: 6em;
+        background-position: bottom;;
+        background-size: cover;
     }
+    #servicesBody {
+        padding: 2em 2.55em;
 
-    ul {
-        list-style: none;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        @media screen and (min-width: 1001px) {
-            justify-content: space-around;
-        }
-        li {
-            font-size: $fontSize;
-            @media screen and (min-width: 1001px) {
-                font-size: 1.75em;
+        .serviceItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3em;
+            .serviceIcon {
+                max-width: 30%;
+                margin-right:2em;
             }
-            color: $lightTextColor;
-            margin: 0.5em 0;
-
-            .desc {
-                font-size: 0.6em;
-                @media screen and (min-width: 1001px) {
-                    font-size: 0.75em;
+            .serviceText {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .serviceName {
+                    font-family: $sansFont;
+                    font-size: 2.25em;
+                }
+                .serviceDescription {
+                    font-family: $sansFont;
+                    font-size: 1.15em;
                 }
             }
         }

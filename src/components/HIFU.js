@@ -44,7 +44,6 @@ export default function HIFU() {
                         <li>Skin with some degree of laxity, and often feeling less firm</li>
                         <li>Loose skin under Neck, Chin or Chest or Body treatment</li>
                         <li>Acne, acne scars, pore reduction and stretch marks</li>
-
                     </ul>
                 </div>
             </div>

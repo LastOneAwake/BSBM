@@ -8,19 +8,19 @@ export default function Nav({ scrollPos }) {
     return (
         <div id='nav' className={navClasses}>
             <div className='navItem centeredFlex'>
-                <span className='navTextHolder'>Consultation</span>
-            </div>
-            <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>About</span>
             </div>
             <div className='navItem centeredFlex'>
-                <span className='navTextHolder'>EMSculpt</span>
-            </div>
-            <div className='navItem centeredFlex'>
-                <span className='navTextHolder'>HIFU/Ultherapy</span>
-            </div>
-            <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>Services</span>
+            </div>
+            <div className='navItem centeredFlex'>
+                <span className='navTextHolder'>Specials</span>
+            </div>
+            <div className='navItem centeredFlex'>
+                <span className='navTextHolder'>Reviews</span>
+            </div>
+            <div className='navItem centeredFlex'>
+                <span className='navTextHolder'>Contact</span>
             </div>
         </div>
     )

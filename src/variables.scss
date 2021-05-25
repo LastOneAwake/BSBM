@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500&family=Work+Sans:wght@300;400&display=swap");
-
+@import url("https://use.typekit.net/vtp3lsu.css");
 $mobileCutoff: 1000px;
+$XLcutoff: 1500px;
 
 $lightTextColor: rgb(231, 231, 231);
 $darkTextColor: rgb(71, 71, 71);
@@ -13,8 +14,9 @@ $lightGreen: rgb(135, 187, 135);
 
 $gradient: linear-gradient(45deg, rgba(rgb(172, 85, 99), 1), rgba(rgb(77, 130, 165), 1), rgba(rgb(160, 48, 117), 1));
 
-$generalFont: "Work Sans", sans-serif;
-$sansFont: "Josefin Sans", sans-serif;
+$generalFont: "hero-new", sans-serif;
+$sansFont: "hero-new", sans-serif;
+$headerFont: "operetta-32", serif;
 $headerFontsize: 3.5em;
 $fontSize: 1.5em;
 $mobile_HeaderFontsize: 2.5em;
