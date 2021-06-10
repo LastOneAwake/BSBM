@@ -1,31 +1,69 @@
 @import "../variables";
 #consultation {
-    background: $darkGrey;
+    background: white;
     flex-direction: column;
     border-top: solid 2px $lightTextColor;
     width: 100%;
-    #consultationText {
+
+    #consultationHeader {
+        background: url("../assets/images/BGS/contactBG.jpg");
+        height: 3em;
+        color: black;
+        font-family: $headerFont;
+        line-height: 1.25em;
+        font-size: 6em;
+        background-position: center;
+        background-size: cover;
+        display: flex;
         width: 100%;
-        #consultationHeader {
-            background: linear-gradient(145deg, rgb(226, 177, 185), rgb(207, 127, 141));
-            color: $lightTextColor;
-            font-family: $sansFont;
-            font-size: 2em;
-            text-shadow: 3px 3px 9px rgba(black, 0.35);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border: solid 3px rgba($lightTextColor, 0.5);
-            box-sizing: border-box;
-            padding: .5em;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 0.35em;
+        padding-right: 0.35em;
+        box-sizing: border-box;
+    }
+    #contactInfo {
+        display: flex;
+        flex-direction: column;
+
+        width:100%;
+        .contactSection {
+            display: flex;
+            flex-direction: row;
+            > div {
+                display: flex;
+                flex: 1;
+                align-items: flex-start;
+            }
+            .contactType {
+                font-family: $headerFont;
+                font-size: 4em;
+                line-height: 1em;
+
+                
+                justify-content: flex-end;
+                padding-right: 1em;
+            }
+            .contactDetails {
+                font-size: 2em;
+                font-family: $sansFont;
+                padding: .5em;
+                justify-content: flex-start;
+                text-align: left;
+                font-weight:400;
+            }
         }
-        #consultationImg {
-            background: url("../assets/bgImage/fitBack.jpg");
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            border: solid 3px rgba($lightTextColor, 0.5);
+    }
+    #socialMedia {
+        display:flex;
+        flex-direction: row;
+        border-top: solid 2px black;
+        padding: 2em 0;
+        justify-content: center;
+        width:100%;
+        img{
+            max-height: 5em;
+            margin: 0 1em;
         }
     }
     #formholder {
@@ -49,7 +87,7 @@
             #serviceHolder {
                 padding: 1em 1em;
                 .formService {
-                    display:flex;
+                    display: flex;
                     justify-content: center;
                     align-items: center;
                     cursor: pointer;
@@ -59,19 +97,18 @@
                     color: $lightTextColor;
                     font-weight: 500;
                     background-color: rgba($lightTextColor, 0.25);
-                    padding: .5em 1em;
+                    padding: 0.5em 1em;
                     border: solid 2px transparent;
                     border-radius: 10px;
                     user-select: none;
                     &:nth-child(2) {
-                        margin-left: .5em;
+                        margin-left: 0.5em;
                     }
-                    transition: background-color 0.35s, border-color .3s;
-             
-                    &.selected {
-                    border: solid 2px rgba($lightTextColor, 0.75);
-                        background-color: $lightGreen;
+                    transition: background-color 0.35s, border-color 0.3s;
 
+                    &.selected {
+                        border: solid 2px rgba($lightTextColor, 0.75);
+                        background-color: $lightGreen;
                     }
                 }
             }

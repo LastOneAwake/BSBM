@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './consultation.scss';
-
+import fbIcon from '../assets/images/icons/facebookIcon.svg';
+import instaIcon from '../assets/images/icons/instagramIcon.png';
 export default function Consultation() {
     const [emailVal, updateEmailVal] = useState('');
     const [nameVal, updateNameVal] = useState('');
@@ -12,59 +13,35 @@ export default function Consultation() {
 
     return (
         <div id='consultation' className='centeredFlex'>
-            <div id='consultationText' className=''>
-                <div id='consultationHeader' className='sectionHeader'>Schedule a consultation now!</div>
-                {/* <div id='consultationImg' className='flex1'></div> */}
+            <div id='consultationHeader' className='sectionHeader'>
+                Contact Us
             </div>
-            <div id='formholder' className='centeredFlex'>
-                <form className=''>
-                    <div id='serviceHolder' className='centeredFlex'>
-                        <div
-                            className={'formService' + (consultationSelected ? ' selected' : '')}
-                            onClick={() => {
-                                updateConsultationSelected(true);
-                            }}
-                        >Consultation</div>
-                        <div
-                            className={'formService' + (!consultationSelected ? ' selected' : '')}
-                            onClick={() => {
-                                updateConsultationSelected(false);
-                            }}
-                        >General Inqury</div>
-                    </div>
-                    <div className='formInput centeredFlex'>
-                        <label>Name</label>
-                        <input
-                            type='text'
-                            value={nameVal}
-                            onChange={e => {
-                                updateNameVal(e.target.value);
-                            }}
-                        /></div>
-                    <div className='formInput centeredFlex'>
-                        <label>Phone Number</label>
-                        <input
-                            type='text'
-                            value={numberVal}
-                            onChange={e => {
-                                updateNumberVal(e.target.value);
-                            }}
-                        />
-                    </div>
-                    <div className='formInput centeredFlex'>
-                        <label>Email</label>
-                        <input
-                            type='text'
-                            value={emailVal}
-                            onChange={e => {
-                                updateEmailVal(e.target.value);
-                            }}
-                        />
-                    </div>
-                    <button >Send</button>
-                </form>
+
+            <div id='contactInfo' className=''>
+                <div className='contactSection'>
+                    <div className='contactType'>Location</div>
+                    <div className='contactDetails'>
+                        30 West Grant
+                        <br />Suite 129
+                        <br />Orlando, FL 32806
+                         </div>
+
+                </div>
+                <div className='contactSection'>
+                    <div className='contactType'>Phone</div>
+                    <div className='contactDetails'>(321) 945-1158</div>
+                </div>
+                <div className='contactSection'>
+                    <div className='contactType'>Email</div>
+                    <div className='contactDetails'>test@test.com</div>
+                </div>
+            </div>
+            <div id='socialMedia' className=''>
+                <img src={fbIcon} />
+                <img src={instaIcon} />
             </div>
         </div>
+
 
     )
 
