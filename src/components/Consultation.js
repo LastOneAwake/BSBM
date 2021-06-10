@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './consultation.scss';
 import fbIcon from '../assets/images/icons/facebookIcon.svg';
 import instaIcon from '../assets/images/icons/instagramIcon.png';
 export default function Consultation() {
-    const [emailVal, updateEmailVal] = useState('');
-    const [nameVal, updateNameVal] = useState('');
-    const [numberVal, updateNumberVal] = useState('');
-    const [consultationSelected, updateConsultationSelected] = useState(true);
-
-
 
 
     return (
@@ -37,8 +31,8 @@ export default function Consultation() {
                 </div>
             </div>
             <div id='socialMedia' className=''>
-                <img src={fbIcon} />
-                <img src={instaIcon} />
+                <img src={fbIcon} alt='facebook link'/>
+                <img src={instaIcon} alt='instagram link'/>
             </div>
         </div>
 

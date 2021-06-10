@@ -61,7 +61,7 @@ export default function Services() {
                             className='serviceItem'
                             key={serviceObj.service}
                         >
-                            <img src={serviceObj.icon} className='serviceIcon' />
+                            <img src={serviceObj.icon} alt={'image depicting ' + serviceObj.service} className='serviceIcon' />
                             <div className='serviceText'>
                                 <div className='serviceName'>{serviceObj.service}</div>
                                 <div className='serviceDescription'>{serviceObj.description}</div>
