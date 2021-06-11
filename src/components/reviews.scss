@@ -34,11 +34,17 @@
             .reviewerReview {
                 font-size: 1.825em;
                 font-family: $sansFont;
+                @media screen and (max-width: $mobileCutoff) {
+                    font-size: 1.5em;
+                }
             }
 
         .reviewerName{
             font-family: $headerFont;
             font-size: 2em;
+            @media screen and (max-width: $mobileCutoff) {
+                font-size: 1.75em;
+            }
         }
         }
     }
