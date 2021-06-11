@@ -21,11 +21,11 @@ export default function Consultation() {
                          </div>
 
                 </div>
-                <div className='contactSection'>
+                <div id='phoneSection' className='contactSection'>
                     <div className='contactType'>Phone</div>
                     <div className='contactDetails'>(321) 945-1158</div>
                 </div>
-                <div className='contactSection'>
+                <div id='emailSection' className='contactSection'>
                     <div className='contactType'>Email</div>
                     <div className='contactDetails'>test@test.com</div>
                 </div>
