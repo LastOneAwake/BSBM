@@ -15,7 +15,10 @@
         justify-content: center;
         align-items: center;
         margin-bottom: .35em;
-
+        @media screen and (max-width: $mobileCutoff) {
+            font-size: 3.5em;
+            height: 3em;
+        }
     }
     #specialsBody {
         padding: 0 2em;

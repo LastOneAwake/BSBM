@@ -3,19 +3,23 @@
 #services {
     flex-direction: column;
     background-color: white;
-    width:100%;
+    width: 100%;
     #servicesHeader {
-        background: url('../assets/images/BGS/servicesBG.jpg');
-        height:3em;
-        color:white;
+        background: url("../assets/images/BGS/servicesBG.jpg");
+        height: 3em;
+        color: white;
         font-family: $headerFont;
         font-size: 6em;
         background-position: center;
         background-size: cover;
+        @media screen and (max-width: $mobileCutoff) {
+            font-size: 3.25em;
+            height: 3.5em;
+        }
     }
     #servicesBody {
         padding: 2em 1.5em;
-  
+
         .serviceItem {
             display: flex;
             flex-direction: row;
@@ -24,7 +28,7 @@
             margin-bottom: 3em;
             .serviceIcon {
                 max-width: 30%;
-                margin-right:2em;
+                margin-right: 2em;
             }
             .serviceText {
                 display: flex;
@@ -33,10 +37,16 @@
                 .serviceName {
                     font-family: $sansFont;
                     font-size: 2.25em;
+                    @media screen and (max-width: $mobileCutoff) {
+                        font-size: 1.7em;
+                    }
                 }
                 .serviceDescription {
                     font-family: $sansFont;
                     font-size: 1.15em;
+                    @media screen and (max-width: $mobileCutoff) {
+                        font-size: 1.25em;
+                    }
                 }
             }
         }

@@ -20,12 +20,17 @@
         align-items: flex-end;
         padding-right: 0.35em;
         box-sizing: border-box;
+        @media screen and (max-width: $mobileCutoff) {
+            font-size: 3.25em;
+            height: 3em;
+            background-size: 200% 200%;
+        }
     }
     #contactInfo {
         display: flex;
         flex-direction: column;
         padding: 1em 0;
-        width: 100%;;
+        width: 100%;
         .contactSection {
             display: flex;
             flex-direction: row;
@@ -34,7 +39,8 @@
                 flex: 1;
                 align-items: flex-start;
             }
-            &#phoneSection, &#emailSection{
+            &#phoneSection,
+            &#emailSection {
                 align-items: center;
                 padding: 1em;
             }
@@ -56,7 +62,7 @@
                 align-items: center;
                 text-align: left;
                 font-weight: 400;
-                
+
                 @media screen and (max-width: $mobileCutoff) {
                     font-size: 1.5em;
                 }
@@ -73,6 +79,13 @@
         img {
             max-height: 5em;
             margin: 0 1em;
+        }
+        @media screen and (max-width: $mobileCutoff) {
+        padding: 1em 0;
+            img {
+                max-height: 4em;
+                margin: 0 1em;
+            }
         }
     }
     #formholder {

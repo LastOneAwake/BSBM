@@ -18,6 +18,10 @@
         margin-bottom: 0.35em;
         text-align: center;
         line-height: 1.25em;
+        @media screen and (max-width: $mobileCutoff) {
+            font-size: 3.25em;
+            height: 4.2em;
+        }
     }
     #reviewsBody {
         display: flex;

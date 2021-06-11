@@ -10,6 +10,10 @@
             font-family: $headerFont;
             font-size: 3.5em;
             border-bottom: solid 1px black;
+            @media screen and (max-width: $mobileCutoff) {
+                font-size: 2.25em;
+                line-height: 1.15em;
+            }
         }
         p {
             font-family: $sansFont;
@@ -18,11 +22,17 @@
             &.firstBlock {
                 margin-bottom: 0.5em;
             }
+            @media screen and (max-width: $mobileCutoff) {
+                font-size: 1.25em;
+            }
         }
         ul {
             li {
                 font-family: $sansFont;
                 font-size: 1.75em;
+                @media screen and (max-width: $mobileCutoff) {
+                    font-size: 1.35em;
+                }
             }
         }
     }
