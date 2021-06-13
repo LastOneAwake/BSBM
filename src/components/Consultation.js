@@ -18,21 +18,37 @@ export default function Consultation() {
                         30 West Grant
                         <br />Suite 129
                         <br />Orlando, FL 32806
-                         </div>
+                    </div>
 
                 </div>
                 <div id='phoneSection' className='contactSection'>
                     <div className='contactType'>Phone</div>
-                    <div className='contactDetails'>(321) 945-1158</div>
+                    <div className='contactDetails'
+                    onClick={()=>{
+                        window.open("tel:+3219451158");
+                    }}
+                    >
+                        (321) 945-1158</div>
                 </div>
                 <div id='emailSection' className='contactSection'>
                     <div className='contactType'>Email</div>
-                    <div className='contactDetails'>test@test.com</div>
+                    <div className='contactDetails' onClick={() => {
+                        window.open('mailto:BodyByMito@yahoo.com?subject=`Body%20By%20Mito%20Inqury`')
+                    }}>
+                        {/* BodyByMito@yahoo.com */}
+                        (Click Here to Email)
+                    </div>
                 </div>
             </div>
             <div id='socialMedia' className=''>
-                <img src={fbIcon} alt='facebook link'/>
-                <img src={instaIcon} alt='instagram link'/>
+                <img src={fbIcon} alt='facebook link'
+                    onClick={() => {
+                        window.open('https://www.facebook.com/bodysculptingbymito/', '_blank');
+                    }} />
+                <img src={instaIcon} alt='instagram link'
+                    onClick={() => {
+                        window.open('https://www.instagram.com/body_sculptingbymito/?hl=en', '_blank');
+                    }} />
             </div>
         </div>
 

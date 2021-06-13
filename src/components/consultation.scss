@@ -31,19 +31,31 @@
         flex-direction: column;
         padding: 1em 0;
         width: 100%;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
         .contactSection {
             display: flex;
             flex-direction: row;
+            width: 45em;
+            box-sizing: border-box;
+            user-select: none;
+            @media screen and (max-width: $mobileCutoff) {
+                width: 28em;
+            }
+            @media screen and (max-width: 500px) {
+                width: 20em;
+            }
             > div {
                 display: flex;
                 flex: 1;
                 align-items: flex-start;
             }
-            &#phoneSection,
-            &#emailSection {
+            &#phoneSection, &#emailSection {
                 align-items: center;
                 padding: 1em;
             }
+
             .contactType {
                 font-family: $headerFont;
                 font-size: 4em;
@@ -62,14 +74,36 @@
                 align-items: center;
                 text-align: left;
                 font-weight: 400;
-
+                justify-content: center;
+                text-align: center;
                 @media screen and (max-width: $mobileCutoff) {
                     font-size: 1.25em;
+                }
+            }
+
+            &#emailSection {
+                .contactDetails {
+                    background-color: rgb(71, 143, 101);
+                    color: white;
+                    font-family: $headerFont;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: color 0.35s, background-color 0.35s, border .25s;
+                    border-radius: 10px;
+                    border: solid 2px transparent;
+                    &:hover {
+                        
+                        // color: #5a86bb;
+                        color: rgb(71, 143, 101);
+                        border: solid 2px rgb(71, 143, 101);;
+                        background-color: white;
+                    }
                 }
             }
         }
     }
     #socialMedia {
+        user-select: none;
         display: flex;
         flex-direction: row;
         border-top: solid 2px black;
@@ -79,9 +113,14 @@
         img {
             max-height: 5em;
             margin: 0 1em;
+            cursor: pointer;
+            transition: filter 0.2s;
+            &:hover {
+                filter: invert(0.3);
+            }
         }
         @media screen and (max-width: $mobileCutoff) {
-        padding: 1em 0;
+            padding: 1em 0;
             img {
                 max-height: 3.5em;
                 margin: 0 1em;
