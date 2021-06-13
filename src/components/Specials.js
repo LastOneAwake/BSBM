@@ -8,12 +8,12 @@ const packages = [
         image: specialsPlacehodler
     },
     {
-        name: 'Package 3',
+        name: 'Package 2',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula leo sit amet nisi aliquam accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula leo sit amet nisi aliquam accumsan',
         image: specialsPlacehodler
     },
     {
-        name: 'Package 2',
+        name: 'Package 3',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula leo sit amet nisi aliquam accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula leo sit amet nisi aliquam accumsan',
         image: specialsPlacehodler
     },
