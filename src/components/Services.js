@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './services.scss';
 import bootyIcon from '../assets/images/icons/bootyIcon.png';
 import coolSculptIcon from '../assets/images/icons/coolSculpt.png';
-import EMSculptIcon from '../assets/images/icons/EMSculpt.png';
+import EMSculptIcon from '../assets/images/icons/EMSculpt_supplied.png';
 import laserLipoIcon from '../assets/images/icons/laserLipo.png';
+import lipoInjectionIcon from '../assets/images/icons/lipoInjections.png';
 import sculpSureIcon from '../assets/images/icons/sculpSure.png';
 import ultherapyIcon from '../assets/images/icons/ultherapy.png';
 import woodenTherapyIcon from '../assets/images/icons/woodenTherapy.png';
@@ -90,6 +91,11 @@ const services = [
             </ul>
         </div>
 
+    },
+    {
+        service: 'Lipo Lab injections',
+        icon: lipoInjectionIcon,
+        description: 'Lipo Lab is a highly effective fat-melting injectable based on Phosphatidyl Choline (PPC). Unlike many other fat-burning injections that only shrink the size of fat cells, this solution permanently dissolves them. It offers an excellent alternative for the reduction and elimination of fat deposits on sites that are slow to respond to physical exercise and surgical procedures (e.g. double chin, abdomen fat). The treatment is painless and incredibly simple.',
     },
     {
         service: 'Ultherapy/HIFU',
@@ -200,15 +206,12 @@ const services = [
                 <li>Stimulating blood circulation and lymphatic drainage</li>
             </ul>
         </div>),
-
     }
 ]
 const comingSoon = [
     {
         service: 'Botox',
         description: 'Botox injections: Botox is a protein made from Botulinum toxin. This is the same toxin that causes botulism. As a cosmetic treatment, Botox injections can reduce the appearance of skin wrinkles. As a treatment for various health issues, including eyelid spasms, excessive sweating, some bladder disorders, and migraine.',
-
-
     },
     {
         service: 'Fillers',
@@ -218,11 +221,11 @@ const comingSoon = [
 
     },
     {
-        service: 'Lipo Lab injections',
-        icon: woodenTherapyIcon,
-        divs: <div>does this work</div>,
-        description: 'Lipo Lab is a highly effective fat-melting injectable based on Phosphatidyl Choline (PPC). Unlike many other fat-burning injections that only shrink the size of fat cells, this solution permanently dissolves them. It offers an excellent alternative for the reduction and elimination of fat deposits on sites that are slow to respond to physical exercise and surgical procedures (e.g. double chin, abdomen fat). The treatment is painless and incredibly simple.',
-    },]
+        service: 'Monthly Subscription',
+        description: 'We are developing a subscription service to better suit our clients needs!',
+    },
+
+]
 
 export default function Services() {
     return (

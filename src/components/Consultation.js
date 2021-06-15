@@ -24,11 +24,12 @@ export default function Consultation() {
                 <div id='phoneSection' className='contactSection'>
                     <div className='contactType'>Phone</div>
                     <div className='contactDetails'
-                    onClick={()=>{
-                        window.open("tel:+3219451158");
-                    }}
+                        onClick={() => {
+                            window.open("tel:+14076765938");
+                        }}
                     >
-                        (321) 945-1158</div>
+                        (407)-676-5938
+                    </div>
                 </div>
                 <div id='emailSection' className='contactSection'>
                     <div className='contactType'>Email</div>
