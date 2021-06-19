@@ -101,6 +101,9 @@
                 }
             }
             &#sodo {
+                width:100%;
+                max-width: 100%;
+                box-sizing: border-box;
                 font-family: $headerFont;
                 justify-content: center;
                 align-items: center;
