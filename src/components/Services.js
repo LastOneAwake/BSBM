@@ -235,20 +235,6 @@ export default function Services() {
                 {services.map(serviceObj => {
                     return ServiceItem(serviceObj);
                 })}
-
-
-
-                <div id='comingSoon'>
-                    <div id='comingSoonHeader'>Services Coming Soon!</div>
-                    {comingSoon.map(service => {
-                        return (
-                            <div className='comingSoonService'>
-                                <div className='comingSoonServiceName'>{service.service}</div>
-                                <div className='comingSoonServiceDescription'>{service.description}</div>
-                            </div>
-                        );
-                    })}
-                </div>
             </div>
         </div>
     )

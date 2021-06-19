@@ -1,0 +1,68 @@
+@import "../variables.scss";
+
+#comingSoonHeader {
+    background: black;
+    font-family: $headerFont;
+    font-size: 6em;
+    height: 3em;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color:white;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    line-height: 1.25em;
+    @media screen and (max-width: $mobileCutoff) {
+        font-size: 3.25em;
+        height: 3.5em;
+    }
+}
+
+#comingSoon {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    .comingSoonSubHeader {
+        width: 100%;
+        font-family: $headerFont;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        @media screen and (max-width: $mobileCutoff) {
+            font-size: 1.8em;
+            height: 2em;
+            margin-bottom: 0.5em;
+        }
+    }
+    .comingSoonService {
+        display: flex;
+        flex: 1;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1em;
+
+        .comingSoonServiceName {
+            font-family: $headerFont;
+            font-size: 2em;
+            @media screen and (max-width: $mobileCutoff) {
+                font-size: 1.8em;
+                height: 2em;
+            }
+        }
+        .comingSoonServiceDescription {
+            font-family: $sansFont;
+            font-size: 1.25em;
+        }
+    }
+}

@@ -51,7 +51,8 @@
                 flex: 1;
                 align-items: flex-start;
             }
-            &#phoneSection, &#emailSection {
+            &#phoneSection,
+            &#emailSection {
                 align-items: center;
                 padding: 1em;
             }
@@ -88,17 +89,27 @@
                     font-family: $headerFont;
                     font-weight: 500;
                     cursor: pointer;
-                    transition: color 0.35s, background-color 0.35s, border .25s;
+                    transition: color 0.35s, background-color 0.35s, border 0.25s;
                     border-radius: 10px;
                     border: solid 2px transparent;
                     &:hover {
-                        
                         // color: #5a86bb;
                         color: rgb(71, 143, 101);
-                        border: solid 2px rgb(71, 143, 101);;
+                        border: solid 2px rgb(71, 143, 101);
                         background-color: white;
                     }
                 }
+            }
+            &#sodo {
+                font-family: $headerFont;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5em;
+                line-height: 1em;
+                padding: 0.25em;
+                margin-bottom: 1em;
+                border-bottom: solid 1px black;
+                border-top: solid 1px black;
             }
         }
     }

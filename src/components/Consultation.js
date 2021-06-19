@@ -12,8 +12,10 @@ export default function Consultation() {
             </div>
 
             <div id='contactInfo' className=''>
+
+                <div id="sodo" className='contactSection'>We're Located In SoDo! </div>
                 <div className='contactSection'>
-                    <div className='contactType'>Location</div>
+                    <div className='contactType'>Address:</div>
                     <div className='contactDetails'>
                         30 West Grant
                         <br />Suite 129

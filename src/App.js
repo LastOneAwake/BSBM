@@ -4,7 +4,7 @@ import Splash from './components/Splash';
 import Consultation from './components/Consultation';
 import About from './components/About';
 import Services from './components/Services';
-// import Specials from './components/Specials';
+import ComingSoon from './components/ComingSoon';
 import Reviews from './components/Reviews';
 // import HIFU from './components/HIFU';
 
@@ -20,7 +20,7 @@ function App() {
       <Splash />
       <About mobileView={mobileView} />
       <Services />
-      {/* <Specials /> */}
+      <ComingSoon />
       <Reviews />
       <Consultation />
     </div>

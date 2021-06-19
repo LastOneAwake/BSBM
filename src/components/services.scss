@@ -5,7 +5,7 @@
     background-color: white;
     width: 100%;
     #servicesHeader {
-        background: url("../assets/images/BGS/servicesBG.jpg");
+        background: black;
         height: 3em;
         color: white;
         font-family: $headerFont;
@@ -175,42 +175,6 @@
                     &:hover {
                         background-color: rgba(172, 172, 172, 0.2);
                     }
-                }
-            }
-        }
-        #comingSoon {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-            align-items: center;
-            justify-content: center;
-            #comingSoonHeader {
-                width: 100%;
-                font-family: $headerFont;
-                font-size: 3em;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                border-top: solid 1px black;
-                border-bottom: solid 1px black;
-            }
-            .comingSoonService {
-                display: flex;
-                flex: 1;
-
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                margin-bottom: 1em;
-                .comingSoonServiceName {
-                    font-family: $headerFont;
-                    font-size: 2em;
-                }
-                .comingSoonServiceDescription {
-                    font-family: $sansFont;
-                    font-size: 1.25em;
                 }
             }
         }
