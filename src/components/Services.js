@@ -4,9 +4,9 @@ import bootyIcon from '../assets/images/icons/bootyIcon.png';
 import coolSculptIcon from '../assets/images/icons/coolSculpt.png';
 import EMSculptIcon from '../assets/images/icons/EMSculpt_supplied.png';
 import laserLipoIcon from '../assets/images/icons/laserLipo.png';
-import lipoInjectionIcon from '../assets/images/icons/lipoInjections.png';
+import lipoInjectionIcon from '../assets/images/icons/lipoLab_supplied.png';
 import sculpSureIcon from '../assets/images/icons/sculpSure.png';
-import ultherapyIcon from '../assets/images/icons/ultherapy.png';
+import ultherapyIcon from '../assets/images/icons/rectUltherapy.png';
 import woodenTherapyIcon from '../assets/images/icons/woodenTherapy.png';
 
 
