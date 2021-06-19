@@ -208,24 +208,7 @@ const services = [
         </div>),
     }
 ]
-const comingSoon = [
-    {
-        service: 'Botox',
-        description: 'Botox injections: Botox is a protein made from Botulinum toxin. This is the same toxin that causes botulism. As a cosmetic treatment, Botox injections can reduce the appearance of skin wrinkles. As a treatment for various health issues, including eyelid spasms, excessive sweating, some bladder disorders, and migraine.',
-    },
-    {
-        service: 'Fillers',
-        icon: woodenTherapyIcon,
-        description: 'Hyaluronic acid is a naturally occurring substance that is already found in your skin. It helps keep skin plump and hydrated. With the aging process the skin lost the subcutaneous fat that supports our skin, causes skin sags. That’s why Dermal fillers are very popular in the cosmetics world.',
-        more: 'Dermal fillers are hydraulic acid or gel-like substances that are injected beneath the skin to restore lost volume, smooth lines and soften creases that are common in the cheeks, lips, and around the mouth 👄 Hyaluronic acid can also be injected into the back of the hands to help add fullness and volume for a smoother, fuller appearance.',
 
-    },
-    {
-        service: 'Monthly Subscription',
-        description: 'We are developing a subscription service to better suit our clients needs!',
-    },
-
-]
 
 export default function Services() {
     return (
