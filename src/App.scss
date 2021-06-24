@@ -1,16 +1,60 @@
-@import 'variables';
+@import "variables";
 
-body{
-  background: white
+body {
+  background: white;
 }
 
 .App {
-display:flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-max-width: 100%;
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#topNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+
+  .navMenuItem {
+    padding: 1em 2em;
+    font-family: "operetta-32", serif;
+    font-size: 1.2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    cursor: pointer;
+    transition: background 0.25s;
+    &:hover {
+      background: rgba(0, 0, 0, 0.75);
+    }
+    &:not(:last-child) {
+      border-right: solid 1px white;
+    }
+    &:first-child {
+      border-bottom-left-radius: 10px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 10px;
+    }
+    .textSeperator {
+      padding: 0 .25em;
+
+    }
+    &.selected {
+      background: rgba(0, 0, 0, 0.75);
+      // text-decoration: underline;
+      &:hover {
+        background: rgba(0, 0, 0, 1);
+      }
+
+      .textSeperator {
+        border-bottom: solid 1px white;
+      }
+    }
+  }
 }

@@ -26,6 +26,43 @@
             background-size: 200% 200%;
         }
     }
+
+    .aboutText {
+        padding: 1em 3em;
+        @media screen and (max-width: $mobileCutoff) {
+            padding: 1em 0;
+        }
+        .aboutHeaderBlock {
+            font-family: $headerFont;
+            font-size: 3.5em;
+            border-bottom: solid 1px black;
+            @media screen and (max-width: $mobileCutoff) {
+                font-size: 2.25em;
+                line-height: 1.15em;
+            }
+        }
+        p {
+            font-family: $sansFont;
+            font-size: 1.75em;
+            margin: 0.5em 0 1.5em 0;
+            &.firstBlock {
+                margin-bottom: 0.5em;
+            }
+            @media screen and (max-width: $mobileCutoff) {
+                font-size: 1.25em;
+            }
+        }
+        ul {
+            li {
+                font-family: $sansFont;
+                font-size: 1.75em;
+                @media screen and (max-width: $mobileCutoff) {
+                    font-size: 1.35em;
+                }
+            }
+        }
+    }
+
     #contactInfo {
         display: flex;
         flex-direction: column;
@@ -51,32 +88,40 @@
                 flex: 1;
                 align-items: flex-start;
             }
-            &#phoneSection,
+
+            &#phoneSection {
+                margin: 1.5em 0;
+            }
             &#emailSection {
                 align-items: center;
                 padding: 1em;
             }
 
             .contactType {
-                font-family: $headerFont;
-                font-size: 4em;
+                font-family: $sansFont;
+                font-size: 2em;
                 line-height: 1em;
                 justify-content: flex-end;
                 padding-right: 1em;
+
+                align-items: center;
+                justify-content: flex-end;
                 @media screen and (max-width: $mobileCutoff) {
                     font-size: 2em;
                 }
             }
             .contactDetails {
+                border-left: solid 1px black;
                 font-size: 2em;
-                font-family: $sansFont;
+                font-family: $headerFont;
+
+                line-height: 1.1em;
                 padding: 0 0.5em;
                 justify-content: flex-start;
-                align-items: center;
+                align-items: flex-start;
                 text-align: left;
                 font-weight: 400;
-                justify-content: center;
-                text-align: center;
+                text-align: left;
                 @media screen and (max-width: $mobileCutoff) {
                     font-size: 1.25em;
                 }
@@ -84,35 +129,37 @@
 
             &#emailSection {
                 .contactDetails {
-                    background-color: rgb(71, 143, 101);
-                    color: white;
+                    // background-color: rgb(71, 143, 101);
+                    // color: white;
+                    color: rgb(71, 143, 101);
+                    // color: white;
                     font-family: $headerFont;
                     font-weight: 500;
                     cursor: pointer;
                     transition: color 0.35s, background-color 0.35s, border 0.25s;
-                    border-radius: 10px;
-                    border: solid 2px transparent;
+
+
                     &:hover {
                         // color: #5a86bb;
                         color: rgb(71, 143, 101);
-                        border: solid 2px rgb(71, 143, 101);
-                        background-color: white;
+                        // border: solid 2px rgb(71, 143, 101);
+                        // background-color: white;
                     }
                 }
             }
             &#sodo {
-                width:100%;
+                width: 100%;
                 max-width: 100%;
                 box-sizing: border-box;
                 font-family: $headerFont;
                 justify-content: center;
                 align-items: center;
-                font-size: 1.5em;
+                font-size: 2.25em;
                 line-height: 1em;
                 padding: 0.25em;
                 margin-bottom: 1em;
-                border-bottom: solid 1px black;
-                border-top: solid 1px black;
+                // border-bottom: solid 1px black;
+                // border-top: solid 1px black;
             }
         }
     }

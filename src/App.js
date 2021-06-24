@@ -1,5 +1,6 @@
 // import Nav from './components/Nav';
 // import MobileNavButton from './components/MobileNav';
+import React, { useState } from 'react';
 import Splash from './components/Splash';
 import Consultation from './components/Consultation';
 import About from './components/About';
@@ -11,18 +12,59 @@ import Reviews from './components/Reviews';
 import './App.scss';
 import './global.scss';
 
+
+const menuOptions = [
+  'Home',
+  'Services',
+  'Products',
+  'Reviews',
+  'Contact',
+]
+
+
 function App() {
   const mobileView = window.innerWidth < 1000;
+  const [currentView, setCurrentView] = useState('Home');
+
   return (
     <div className="App"    >
-      {/* {!mobileView && <Nav />}
-      {mobileView && <MobileNavButton />} */}
-      <Splash />
-      <About mobileView={mobileView} />
-      <Services />
-      <ComingSoon />
-      <Reviews />
-      <Consultation />
+      <div id='topNav'>
+        {menuOptions.map(menuItem => {
+          const selected = menuItem === currentView;
+          let className = 'navMenuItem' + (selected ? ' selected' : '');
+
+          return (
+            <span className={className}
+              onClick={() => {
+                setCurrentView(menuItem);
+              }}
+            >
+              <span className='textSeperator'>{menuItem}</span>
+            </span>);
+        })}
+      </div>
+
+      {currentView === 'Home' &&
+        <Splash />
+      }
+      {currentView === 'Services' &&
+        <Services />
+      }
+      {currentView === 'Reviews' &&
+        <Reviews />
+      }
+      {currentView === '' &&
+        <ComingSoon />
+      }
+
+      {currentView === 'Contact' &&
+        <React.Fragment>
+          <Consultation />
+        </React.Fragment>
+      }
+
+
+
     </div>
   );
 }

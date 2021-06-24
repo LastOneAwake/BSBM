@@ -8,12 +8,13 @@ export default function About({ mobileView }) {
             <div id='aboutTopText' className='aboutText '>
                 <div className='aboutHeaderBlock'>About Us</div>
                 <p className=''>
-                    I am a Registered Nurse certified in Body Sculpting, Body Contouring, and Wood Therapy. Body by Mito was born out of my dedication and passion to offer advanced wellness treatments that give you noticeable, same day results.
+                Body by Mito was born out of my dedication and passion to offer advanced wellness treatments that give you noticeable, same day results.
+                    I am a Registered Nurse certified in Body Sculpting, Body Contouring, and Wood Therapy. 
                     I recognize each person is unique and has different goals. I love getting to know my clients while developing
                     personalized treatment plans that help them look and feel their best!
                 </p>
             </div>
-            <div id='aboutBottomText' className='aboutText '>
+            {/* <div id='aboutBottomText' className='aboutText '>
                 <div className='aboutHeaderBlock'>How We Do it</div>
                 <p className='firstBlock'>
                     We specialize in non-surgical, FDA
@@ -32,7 +33,7 @@ export default function About({ mobileView }) {
                     The body's lymphatic system then kicks into gear to remove these broken-down fat cells, giving you a dramatically slimmer appearance. Our goal is to provide our
                     clients with the best results.
                 </p>
-            </div>
+            </div> */}
         </div>
 
     )
@@ -44,3 +45,13 @@ export default function About({ mobileView }) {
 
 
 
+        <p className='firstBlock'>
+                    We specialize in non-surgical, FDA
+                    approved treatments for permanent fat
+                    reduction.
+                    <br />
+                    These treatments involve killing and/or liquifying visible fat cells via freezing, laser, or high frequency sound waves.
+                    <br />
+                    The body's lymphatic system then kicks into gear to remove these broken-down fat cells, giving you a dramatically slimmer appearance. Our goal is to provide our
+                    clients with the best results.
+                </p>

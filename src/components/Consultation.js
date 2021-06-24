@@ -1,5 +1,6 @@
 import React from 'react';
 import './consultation.scss';
+import './about.scss';
 import fbIcon from '../assets/images/icons/facebookIcon.svg';
 import instaIcon from '../assets/images/icons/instagramIcon.png';
 export default function Consultation() {
@@ -8,14 +9,22 @@ export default function Consultation() {
     return (
         <div id='consultation' className='centeredFlex'>
             <div id='consultationHeader' className='sectionHeader'>
-                Contact Us
+                About Us
             </div>
-
+            <div id='aboutTopText' className='aboutText '>
+                {/* <div className='aboutHeaderBlock'>About Us</div> */}
+                <p className=''>
+                    Body by Mito was born out of my dedication and passion to offer advanced wellness treatments that give you noticeable, same day results.
+                    I am a Registered Nurse certified in Body Sculpting, Body Contouring, and Wood Therapy.
+                    I recognize each person is unique and has different goals. I love getting to know my clients while developing
+                    personalized treatment plans that help them look and feel their best!
+                </p>
+            </div>
             <div id='contactInfo' className=''>
 
                 <div id="sodo" className='contactSection'>We're Located In SoDo! </div>
                 <div className='contactSection'>
-                    <div className='contactType'>Address:</div>
+                    <div className='contactType'>Find Us:</div>
                     <div className='contactDetails'>
                         30 West Grant
                         <br />Suite 129
@@ -24,7 +33,7 @@ export default function Consultation() {
 
                 </div>
                 <div id='phoneSection' className='contactSection'>
-                    <div className='contactType'>Phone</div>
+                    <div className='contactType'>Call Us:</div>
                     <div className='contactDetails'
                         onClick={() => {
                             window.open("tel:+14076765938");
@@ -34,12 +43,12 @@ export default function Consultation() {
                     </div>
                 </div>
                 <div id='emailSection' className='contactSection'>
-                    <div className='contactType'>Email</div>
+                    <div className='contactType'>Email Us:</div>
                     <div className='contactDetails' onClick={() => {
                         window.open('mailto:BodyByMito@yahoo.com?subject=`Body%20By%20Mito%20Inqury`')
                     }}>
                         {/* BodyByMito@yahoo.com */}
-                        (Click Here to Email)
+                        Click Here to Email
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ export default function Nav({ scrollPos }) {
     console.log(scrollPos);
     return (
         <div id='nav' className={navClasses}>
-            {/* <div className='navItem centeredFlex'>
+            <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>About</span>
             </div>
             <div className='navItem centeredFlex'>
@@ -21,7 +21,7 @@ export default function Nav({ scrollPos }) {
             </div>
             <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>Contact</span>
-            </div> */}
+            </div>
         </div>
     )
 }

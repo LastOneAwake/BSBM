@@ -8,6 +8,16 @@ export default function Splash() {
         <div id='splash' className='fullPageSection centeredFlex'>
 
             <img id='splashLogo' src={logo} alt='Body Sculpting By Mito logo' />
+            <p id='introBlock'>
+                We specialize in non-surgical, FDA
+                approved treatments for permanent fat
+                reduction.
+                <br />
+                These treatments involve killing and/or liquifying visible fat cells via freezing, laser, or high frequency sound waves.
+                <br />
+                The body's lymphatic system then kicks into gear to remove these broken-down fat cells, giving you a dramatically slimmer appearance. Our goal is to provide our
+                clients with the best results.
+            </p>
         </div>
 
     )
