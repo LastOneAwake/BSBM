@@ -226,7 +226,8 @@
         @media screen and (max-width: $mobileCutoff) {
             font-size: 1.8em;
             height: 2em;
-            margin-bottom: 0.5em;
+            margin-bottom: 2em;
+            margin-top: 1em;        
         }
     }
     .comingSoonService {
@@ -250,6 +251,7 @@
         .comingSoonServiceDescription {
             font-family: $sansFont;
             font-size: 1.25em;
+            margin-bottom: 3em;;
         }
     }
 }

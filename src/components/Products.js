@@ -8,7 +8,8 @@ const productsComingSoon = [
     },
     {
         product: 'Fajas',
-        description: 'Fajas to helep strength your posture and lower back muscles, our fajas also help to reduce appetite and will help in burning fat through a thermogenic effect on the abdomen.',
+        // description: 'Fajas to help strength your posture and lower back muscles, our fajas also help to reduce appetite and will help in burning fat through a thermogenic effect on the abdomen.',
+        description: 'Our fajas help strengthen your posture and lower back muscles. They also help to reduce appetite and burn fat through a thermogenic effect on the abdomen.',
 
     },
 
@@ -19,11 +20,11 @@ export default function ComingSoon() {
     return (
         <div id='products' className='fullPageSection sectionFadeIn'>
             <div id='productsHeader' className='pageHeader'>
-                Supplies
+                Shop Mito
             </div>
             <div id='productsBody'>
             <div id='comingSoon'>
-                <div className='comingSoonSubHeader'>Products Coming Soon!</div>
+                <div className='comingSoonSubHeader'>A Preview of Products Coming Soon!</div>
                 {productsComingSoon.map(product => {
                     return (
                         <div className='comingSoonProduct'>

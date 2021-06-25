@@ -17,7 +17,7 @@ body {
 
 .sectionFadeIn {
   animation: fadeIn 0.25s 1;
-  padding-bottom: 2em;;
+  padding-bottom: 2em;
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -43,7 +43,7 @@ body {
     width: 100%;
     max-width: 100%;
     top: unset;
-    min-width: unset;;
+    min-width: unset;
     bottom: -2px;
   }
 
@@ -82,11 +82,15 @@ body {
       border-bottom-right-radius: 7px;
       @media screen and (max-width: $mobileCutoff) {
         border-bottom-right-radius: 0;
-          border-top-right-radius: 7px;
-        }
+        border-top-right-radius: 7px;
+      }
     }
     .textSeperator {
       padding: 0 0.25em;
+
+      @media screen and (max-width: $mobileCutoff) {
+        font-size: 0.85em;
+      }
     }
     &.selected {
       background: rgba(0, 0, 0, 0.75);

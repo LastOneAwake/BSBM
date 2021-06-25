@@ -24,7 +24,7 @@ export default function Consultation() {
 
                 <div id="sodo" className='contactSection'>We're Located In SoDo! </div>
                 <div className='contactSection'>
-                    <div className='contactType'>Find Us:</div>
+                    <div className='contactType'>Visit Us:</div>
                     <div className='contactDetails'>
                         30 West Grant
                         <br />Suite 129
@@ -43,12 +43,12 @@ export default function Consultation() {
                     </div>
                 </div>
                 <div id='emailSection' className='contactSection'>
-                    <div className='contactType'>Email Us:</div>
+                    {/* <div className='contactType'>Email Us:</div> */}
                     <div className='contactDetails' onClick={() => {
                         window.open('mailto:BodyByMito@yahoo.com?subject=`Body%20By%20Mito%20Inqury`')
                     }}>
                         {/* BodyByMito@yahoo.com */}
-                        Click Here to Email
+                        Click Here to Email Us
                     </div>
                 </div>
             </div>

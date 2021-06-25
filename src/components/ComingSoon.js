@@ -1,5 +1,5 @@
 import React from 'react';
-import './comingSoon.scss';
+// import './comingSoon.scss';
 
 const servicesComingSoon = [
     {
