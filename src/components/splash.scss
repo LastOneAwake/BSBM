@@ -7,6 +7,7 @@
     background-attachment: fixed;
     flex-direction: column;
     overflow: hidden;
+    padding-bottom: 0;
     @media screen and (max-width: $mobileCutoff) {
         background-attachment: scroll;
         background-position: center;
@@ -15,16 +16,31 @@
         background-position: 0 -15em;
         background-image: url("../assets/images/BGS/splash_1200v.jpg");
     }
-    #splashLogo {
-        max-width: 80%;
-        filter: drop-shadow(2px 3px 5px rgba(black, 0.5));
-        z-index: 9999;
-        position: absolute;
-        user-select: none;
+    #splashLogoContainer {
+        display: flex;
+        flex: 1.25;
+        justify-content: center;
+        align-items: flex-end;
+        #splashLogo {
+            max-width: 80%;
+            filter: drop-shadow(2px 3px 5px rgba(black, 0.5));
+            user-select: none;
+        }
     }
 
+    #introBlock {
+        width: 65%;
+        @media screen and (max-width: $mobileCutoff) {
+            width: 90%;
+        }
 
-    #introBlock{
-
+        font-family: $sansFont;
+        color: white;
+        display: flex;
+        flex: 1 1;
+        align-items: flex-end;
+        font-size: 1.2em;
+        font-weight: 700;
+        padding: 0 1.15em 3em 1.15em;
     }
 }

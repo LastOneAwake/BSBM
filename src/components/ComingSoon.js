@@ -36,8 +36,8 @@ const productsComingSoon = [
 
 export default function ComingSoon() {
     return (
-        <div id='comingSoon' className=' flex1'>
-            <div id='comingSoonHeader' className='centeredFlex' > We Will Soon Offer...</div>
+        <div id='comingSoon' className=' flex1 sectionFadeIn'>
+            <div id='comingSoonHeader' className='centeredFlex pageHeader' > We Will Soon Offer...</div>
             <div id='comingSoonBody'>
                 <div className='comingSoonSubHeader'>Services Coming Soon!</div>
                 {servicesComingSoon.map(service => {

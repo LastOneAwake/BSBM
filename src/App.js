@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Splash from './components/Splash';
 import Consultation from './components/Consultation';
-import About from './components/About';
+import Products from './components/Products';
 import Services from './components/Services';
 import ComingSoon from './components/ComingSoon';
 import Reviews from './components/Reviews';
@@ -49,6 +49,9 @@ function App() {
       }
       {currentView === 'Services' &&
         <Services />
+      }
+      {currentView === 'Products' &&
+        <Products />
       }
       {currentView === 'Reviews' &&
         <Reviews />

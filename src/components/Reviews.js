@@ -23,8 +23,8 @@ const reviews = [
 export default function Reviews() {
 
     return (
-        <div id='reviews' className='fullPageSection'>
-            <div id='reviewsHeader'>What Our Clients Say About Us</div>
+        <div id='reviews' className='fullPageSection sectionFadeIn'>
+            <div id='reviewsHeader' className='pageHeader'>What Our Clients Say About Us</div>
             <div id='reviewsBody'>
                 {reviews.map((reviewObj, i) => {
                     return (

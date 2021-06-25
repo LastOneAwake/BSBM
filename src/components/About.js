@@ -4,7 +4,7 @@ import './about.scss';
 export default function About({ mobileView }) {
 
     return (
-        <div id='about' className='centeredFlex'>
+        <div id='about' className='centeredFlex pageHeader'>
             <div id='aboutTopText' className='aboutText '>
                 <div className='aboutHeaderBlock'>About Us</div>
                 <p className=''>

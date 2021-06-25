@@ -5,9 +5,11 @@ import logo from '../assets/images/icons/logoCutText.png';
 export default function Splash() {
 
     return (
-        <div id='splash' className='fullPageSection centeredFlex'>
+        <div id='splash' className='fullPageSection centeredFlex sectionFadeIn'>
 
-            <img id='splashLogo' src={logo} alt='Body Sculpting By Mito logo' />
+            <div id='splashLogoContainer'>
+                <img id='splashLogo' src={logo} alt='Body Sculpting By Mito logo' />
+            </div>
             <p id='introBlock'>
                 We specialize in non-surgical, FDA
                 approved treatments for permanent fat

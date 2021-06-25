@@ -7,7 +7,7 @@ export default function Consultation() {
 
 
     return (
-        <div id='consultation' className='centeredFlex'>
+        <div id='consultation' className='centeredFlex sectionFadeIn'>
             <div id='consultationHeader' className='sectionHeader'>
                 About Us
             </div>

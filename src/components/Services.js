@@ -228,14 +228,14 @@ const servicesComingSoon = [
 
 export default function Services() {
     return (
-        <div id='services' className=' flex1'>
-            <div id='servicesHeader' className='centeredFlex'>Services</div>
+        <div id='services' className=' flex1 sectionFadeIn'>
+            <div id='servicesHeader' className='centeredFlex pageHeader'>Services</div>
             <div id='servicesBody'>
                 {services.map(serviceObj => {
                     return ServiceItem(serviceObj);
                 })}
             </div>
-            <div id='comingSoonBody'>
+            <div id='comingSoon'>
                 <div className='comingSoonSubHeader'>Services Coming Soon!</div>
                 {servicesComingSoon.map(service => {
                     return (
