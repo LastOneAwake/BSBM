@@ -23,7 +23,7 @@ const menuOptions = [
 
 
 function App() {
-  const mobileView = window.innerWidth < 1000;
+  // const mobileView = window.innerWidth < 1000;
   const [currentView, setCurrentView] = useState('Home');
 
   return (

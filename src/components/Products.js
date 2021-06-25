@@ -1,4 +1,3 @@
-import { product } from 'prelude-ls';
 import React from 'react';
 import './products.scss';
 
