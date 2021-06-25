@@ -59,7 +59,7 @@ export default function Consultation() {
                     }} />
                 <img src={instaIcon} alt='instagram link'
                     onClick={() => {
-                        window.open('https://www.instagram.com/body_sculptingbymito/?hl=en', '_blank');
+                        window.open('https://www.instagram.com/bodysculpting.bymito', '_blank');
                     }} />
             </div>
         </div>
