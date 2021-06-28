@@ -1,13 +1,23 @@
 import React from 'react';
 import './nav.scss';
 
+const navItems =[
+    'Home',
+    'Services',
+    'Shop Mito',
+    'Reviews',
+    'About & Contact'
+]
+
+
 export default function Nav({ scrollPos }) {
 
     const navClasses = scrollPos === 0 ? 'top' : '';
     console.log(scrollPos);
     return (
         <div id='nav' className={navClasses}>
-            <div className='navItem centeredFlex'>
+
+            {/* <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>About</span>
             </div>
             <div className='navItem centeredFlex'>
@@ -21,7 +31,9 @@ export default function Nav({ scrollPos }) {
             </div>
             <div className='navItem centeredFlex'>
                 <span className='navTextHolder'>Contact</span>
-            </div>
+            </div> */}
         </div>
     )
 }
+
+

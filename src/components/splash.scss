@@ -8,6 +8,7 @@
     flex-direction: column;
     overflow: hidden;
     padding-bottom: 0;
+    
     @media screen and (max-width: $mobileCutoff) {
         background-attachment: scroll;
         background-position: center;
