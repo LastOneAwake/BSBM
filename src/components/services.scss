@@ -33,19 +33,24 @@
             .serviceIcon {
                 max-width: 30%;
                 margin-right: 2em;
+                @media screen and (max-width: $mobileCutoff) {
+                    max-width: 80%;
+                    margin-right: 0;
+                }
             }
             .serviceText {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 @media screen and (max-width: $mobileCutoff) {
-                   align-items: center;
+                    align-items: center;
                 }
                 .serviceName {
                     font-family: $headerFont;
                     font-size: 2.25em;
                     @media screen and (max-width: $mobileCutoff) {
                         font-size: 1.7em;
+                        padding: 0.5em 0;
                     }
                 }
                 .serviceDescription {
@@ -227,7 +232,7 @@
             font-size: 1.8em;
             height: 2em;
             margin-bottom: 2em;
-            margin-top: 1em;        
+            margin-top: 1em;
         }
     }
     .comingSoonService {
@@ -251,7 +256,7 @@
         .comingSoonServiceDescription {
             font-family: $sansFont;
             font-size: 1.25em;
-            margin-bottom: 3em;;
+            margin-bottom: 3em;
         }
     }
 }
