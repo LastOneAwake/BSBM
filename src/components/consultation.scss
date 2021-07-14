@@ -92,6 +92,13 @@
 
             &#phoneSection {
                 margin: 1.5em 0;
+                display:flex;
+                flex:1;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .contactDetails {
+                    color: #36704e;
+                }
             }
             &#emailSection {
                 align-items: center;
@@ -134,6 +141,9 @@
                     justify-content: center;
                     align-items: center;
                 }
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .contactDetails {
                     color: #478f65;
                     font-family: "operetta-32", serif;
@@ -144,7 +154,9 @@
                     text-align: center;
                     justify-content: center;
                     align-items: center;
-                    font-size: 1.65em;
+                    font-size: 2em;
+                    border-bottom: solid 1px black;
+                    flex: unset;
                     &:hover {
                         // color: #5a86bb;
                         color: rgb(71, 143, 101);

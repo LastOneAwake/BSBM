@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './services.scss';
 import bootyIcon from '../assets/images/icons/bootyIcon.png';
-import coolSculptIcon from '../assets/images/icons/coolSculpt.png';
+import coolSculptIcon from '../assets/images/icons/coolsculpt_supplied.png';
 import EMSculptIcon from '../assets/images/icons/EMSculpt_supplied.png';
-import laserLipoIcon from '../assets/images/icons/laserLipo.png';
+import laserLipoIcon from '../assets/images/icons/laserLipo_supplied.jpg';
 import lipoInjectionIcon from '../assets/images/icons/lipoLab_supplied.png';
-import sculpSureIcon from '../assets/images/icons/sculpSure.png';
+import sculpSureIcon from '../assets/images/icons/sculpsure_supplied.png';
 import ultherapyIcon from '../assets/images/icons/rectUltherapy.png';
 import woodenTherapyIcon from '../assets/images/icons/woodenTherapy.png';
 

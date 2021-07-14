@@ -34,13 +34,13 @@
         @media screen and (max-width: $mobileCutoff) {
             width: 90%;
         }
-
+        justify-content: center;
         font-family: $sansFont;
         color: white;
         display: flex;
         flex: 1 1;
         align-items: flex-end;
-        font-size: 1.2em;
+        font-size: 1.5em;
         font-weight: 700;
         padding-bottom: 4em;
         box-sizing: border-box;
