@@ -168,7 +168,7 @@ function ProductItem(productObj) {
                             setExpanded(!expanded)
                         }}
                     >
-                        {expanded ? 'Show Less' : 'More Info'}
+                        {expanded ? 'Show Less' : (productObj.moreID === 'waterBottlesMore' ? 'More Styles' : 'Show More')}
                     </div>}
 
             </div>

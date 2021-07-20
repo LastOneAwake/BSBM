@@ -31,7 +31,7 @@
                 justify-content: center;
             }
             .serviceIcon {
-                max-width: 30%;
+                width: 20em;
                 margin-right: 2em;
                 @media screen and (max-width: $mobileCutoff) {
                     max-width: 80%;
@@ -173,7 +173,7 @@
                 .moreButton {
                     margin-top: 0.5em;
                     font-family: $headerFont;
-                    padding: .25em;
+                    padding: 0.25em;
                     background-color: rgba(161, 216, 179, 0.486);
                     font-size: 1.5em;
                     display: flex;

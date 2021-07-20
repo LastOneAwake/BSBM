@@ -231,7 +231,7 @@
 
                                     .waterbottleImg {
                                         height: 15em;
-                                        margin: .5em 0;
+                                        margin: 0.5em 0;
                                         border-radius: 15px;
 
                                         @media screen and (max-width: 1200px) {
@@ -241,8 +241,8 @@
                                             height: 15em;
                                         }
                                         @media screen and (min-width: $XLcutoff) {
-                                            height: 22em;
-
+                                            height: unset;
+                                            min-width: 19vw;
                                         }
                                     }
                                 }
@@ -278,12 +278,13 @@
                                     height: 85em;
                                 }
                                 @media screen and (min-width: $XLcutoff) {
-                                    height: 50em;
+                                    height: 60em;
                                 }
                             }
                         }
                     }
                     .moreButton {
+                        width: 6.25em;
                         margin-top: 0.5em;
                         font-family: $headerFont;
                         padding: 0.25em;
@@ -292,7 +293,6 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 5em;
                         border-radius: 5px;
                         cursor: pointer;
                         transition: background-color 0.25s;
