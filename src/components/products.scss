@@ -165,23 +165,13 @@
                             display: flex;
                             flex-direction: row;
                             width: 100%;
+                            @media screen and (max-width: 650px) {
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                align-items: center;
+                            }
                             img {
                                 max-height: 18em;
-                                &#factsLabel {
-                                    display: flex;
-                                    flex: 1;
-                                    max-width: 44em;
-                                }
-                            }
-                        }
-                        ul {
-                            margin: 0;
-                        }
-                        &.expanded {
-                            height: 25em;
-                            &#lipoLabProduct {
-                                height: 28em;
-
                                 @media screen and (max-width: 1200px) {
                                     height: 28em;
                                 }
@@ -189,7 +179,65 @@
                                     height: 35em;
                                 }
                                 @media screen and (min-width: $XLcutoff) {
-                                    height: 24em;
+                                    height: 27em;
+                                }
+                                &#factsLabel {
+                                    display: flex;
+                                    height: 17.5em;
+                                    width: calc(17.5em * 1.75);
+
+                                    @media screen and (max-width: 1200px) {
+                                        height: 17.5em;
+                                        width: calc(17.5em * 1.75);
+                                    }
+                                    @media screen and (max-width: 650px) {
+                                        height: 15em;
+                                        width: calc(15em * 1.75);
+                                    }
+                                    @media screen and (min-width: $XLcutoff) {
+                                        height: 29em;
+                                        width: calc(29em * 1.75);
+                                    }
+                                }
+                       
+                            }
+                            
+                        }
+                        .moreText{
+                            @media screen and (max-width: 1000px) {
+                                text-align: center;
+                            }
+                            img{
+                                max-height: 35vh;
+
+                                @media screen and (max-width: 1200px) {
+                                    height: 28em;
+                                }
+                                @media screen and (max-width: 650px) {
+                                    height: 51em;
+                                }
+                                @media screen and (min-width: $XLcutoff) {
+                                    height: 80em;
+                                }
+                            }
+                        }
+                        
+                        ul {
+                            margin: 0;
+                        }
+                        &.expanded {
+                            height: 25em;
+                            &#lipoLabProduct {
+                                height: 58em;
+
+                                @media screen and (max-width: 1200px) {
+                                    height: 57.5em;
+                                }
+                                @media screen and (max-width: 650px) {
+                                    height: 77.5em;
+                                }
+                                @media screen and (min-width: $XLcutoff) {
+                                    height: 55em;
                                 }
                             }
                         }

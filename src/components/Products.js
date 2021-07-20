@@ -7,6 +7,7 @@ import cuteWaterBottles from '../assets/images/icons/cuteWaterBottles.jpg';
 import lipoInjectionIcon from '../assets/images/icons/lipoLab_supplied.png';
 import lipoImg2 from '../assets/images/icons/lipoImg_2.jpg';
 import lipoImg3 from '../assets/images/icons/lipoImg_3.jpg';
+import lipoImg_treatment from '../assets/images/icons/treatmentImg.png';
 
 
 
@@ -65,6 +66,8 @@ const prodsAvailable = [
                     You are recommended to repeat this treatment 4~5 times at 7~10 day’s interval.
                     In case of other parts such as double chin, armpit, upper arm and thigh, you are required to adjust injection quantity according to the obesity degree of the part to be injected. 0.05-0.1ml
                 </p>
+                <img className='moreImg' id='treatmentAreas' src={lipoImg_treatment} alt='Lipo Lab Treatment Areas' />
+
             </div>
         </div>)
     },
