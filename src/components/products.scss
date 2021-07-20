@@ -28,6 +28,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        padding: 0 4em;
+
         .productsSubHeader {
             width: 100%;
             font-family: $headerFont;
@@ -51,11 +53,11 @@
             flex: 1;
             align-items: center;
             justify-content: center;
-
             .availableProduct {
                 display: flex;
                 flex: 1;
-
+                width: 100%;
+                max-width: 1400px;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
@@ -102,6 +104,111 @@
                         max-width: calc(45vw - 2em);
                         &:not(:last-child) {
                             margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .productItem {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 3em;
+                @media screen and (max-width: $mobileCutoff) {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .productIcon {
+                    max-width: 30%;
+                    margin-right: 2em;
+                    @media screen and (max-width: $mobileCutoff) {
+                        max-width: 80%;
+                        margin-right: 0;
+                    }
+                }
+                .productText {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    @media screen and (max-width: $mobileCutoff) {
+                        align-items: center;
+                    }
+                    .productName {
+                        font-family: $headerFont;
+                        font-size: 2.25em;
+                        @media screen and (max-width: $mobileCutoff) {
+                            font-size: 1.7em;
+                            padding: 0.5em 0;
+                        }
+                    }
+                    .productDescription {
+                        font-family: $sansFont;
+                        font-size: 1.15em;
+                        padding-bottom: 0.5em;
+                        // border-bottom : solid 1px $darkGrey;
+                        @media screen and (max-width: $mobileCutoff) {
+                            font-size: 1.25em;
+                        }
+                    }
+                    .productDescMore {
+                        height: 0;
+                        overflow: hidden;
+                        transition: height 0.25s;
+                        font-family: $sansFont;
+                        .productSubheader {
+                            margin-top: 1em;
+                            font-size: 1.25em;
+                            font-weight: 400;
+                            font-family: $headerFont;
+                        }
+                        .moreImgHolder {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            img {
+                                max-height: 18em;
+                                &#factsLabel {
+                                    display: flex;
+                                    flex: 1;
+                                    max-width: 44em;
+                                }
+                            }
+                        }
+                        ul {
+                            margin: 0;
+                        }
+                        &.expanded {
+                            height: 25em;
+                            &#lipoLabProduct {
+                                height: 28em;
+
+                                @media screen and (max-width: 1200px) {
+                                    height: 28em;
+                                }
+                                @media screen and (max-width: 650px) {
+                                    height: 35em;
+                                }
+                                @media screen and (min-width: $XLcutoff) {
+                                    height: 24em;
+                                }
+                            }
+                        }
+                    }
+                    .moreButton {
+                        margin-top: 0.5em;
+                        font-family: $headerFont;
+                        padding: 0.25em;
+                        background-color: rgba(161, 216, 179, 0.486);
+                        font-size: 1.5em;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 5em;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: background-color 0.25s;
+                        &:hover {
+                            background-color: rgba(172, 172, 172, 0.2);
                         }
                     }
                 }
