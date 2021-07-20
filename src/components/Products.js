@@ -12,33 +12,35 @@ import lipoImg_treatment from '../assets/images/icons/treatmentImg.png';
 
 
 
-// import IMG_5959 from '../assets/images/waterBottles/IMG_5959.jpg';
+import IMG_5959 from '../assets/images/waterBottles/IMG_5959.jpg';
 // import IMG_5960 from '../assets/images/waterBottles/IMG_5960.jpg';
 // import IMG_5961 from '../assets/images/waterBottles/IMG_5961.jpg';
 // import IMG_5962 from '../assets/images/waterBottles/IMG_5962.jpg';
 // import IMG_5964 from '../assets/images/waterBottles/IMG_5964.jpg';
-// import IMG_5966 from '../assets/images/waterBottles/IMG_5966.jpg';
+import IMG_5966 from '../assets/images/waterBottles/IMG_5966.jpg';
 // import IMG_5969 from '../assets/images/waterBottles/IMG_5969.jpg';
-// import IMG_5994 from '../assets/images/waterBottles/IMG_5994.jpg';
+import IMG_5994 from '../assets/images/waterBottles/IMG_5994.jpg';
 // import IMG_5997 from '../assets/images/waterBottles/IMG_5997.jpg';
-// import IMG_6001 from '../assets/images/waterBottles/IMG_6001.jpg';
+import IMG_6001 from '../assets/images/waterBottles/IMG_6001.jpg';
 // import IMG_6003 from '../assets/images/waterBottles/IMG_6003.jpg';
-// import IMG_6005 from '../assets/images/waterBottles/IMG_6005.jpg';
+import IMG_6005 from '../assets/images/waterBottles/IMG_6005.jpg';
 // import IMG_6006 from '../assets/images/waterBottles/IMG_6006.jpg';
 // import IMG_6024 from '../assets/images/waterBottles/IMG_6024.jpg';
-// import IMG_6025 from '../assets/images/waterBottles/IMG_6025.jpg';
-// import IMG_6026 from '../assets/images/waterBottles/IMG_6026.jpg';
-// import IMG_6027 from '../assets/images/waterBottles/IMG_6027.jpg';
+import IMG_6025 from '../assets/images/waterBottles/IMG_6025.jpg';
+import IMG_6026 from '../assets/images/waterBottles/IMG_6026.jpg';
+import IMG_6027 from '../assets/images/waterBottles/IMG_6027.jpg';
 // import IMG_6028 from '../assets/images/waterBottles/IMG_6028.jpg';
 // import IMG_6029 from '../assets/images/waterBottles/IMG_6029.jpg';
 
 
 
 const wbImages = [
-    bpWaterBottles,
     greyWaterBottle,
     greenWaterBottle,
-    cuteWaterBottles
+    cuteWaterBottles,
+    IMG_5966,
+    IMG_6027,
+    IMG_6026
 ]
 
 
@@ -75,8 +77,28 @@ const prodsAvailable = [
     {
         product: 'Water Bottles',
         description: 'Water bottles specifically designed to promote hydration and general health!',
-        imgs: wbImages
+        icon: bpWaterBottles,
+        moreID: 'waterBottlesMore',
+        more: (
+            <div id='waterbottleMoreText' className='moreText'>
+                <div className='productSubheader'>We Carry Various Styles!</div>
+                <div id='moreWBHolder'>
+                    {wbImages.map((img, i) => {
+                        return (
+                            <img className='moreImg waterbottleImg' src={img} alt={`img_${i}`} />
+                        );
+
+                    })}
+                </div >
+            </div>)
     },
+    // {
+    //     product: '',
+    //     moreID: '',
+    //     icon: img resource,
+    //     description: (<div></div>),
+    //     more: (<div></div>)
+    // }
 ]
 
 const productsComingSoon = [

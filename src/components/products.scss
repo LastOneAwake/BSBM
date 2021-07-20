@@ -28,7 +28,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0 4em;
+        padding: 0 4em 2em 4em;
 
         .productsSubHeader {
             width: 100%;
@@ -119,7 +119,7 @@
                     justify-content: center;
                 }
                 .productIcon {
-                    max-width: 30%;
+                    max-width: 19em;
                     margin-right: 2em;
                     @media screen and (max-width: $mobileCutoff) {
                         max-width: 80%;
@@ -148,6 +148,7 @@
                         // border-bottom : solid 1px $darkGrey;
                         @media screen and (max-width: $mobileCutoff) {
                             font-size: 1.25em;
+                            text-align: center;
                         }
                     }
                     .productDescMore {
@@ -199,15 +200,13 @@
                                         width: calc(29em * 1.75);
                                     }
                                 }
-                       
                             }
-                            
                         }
-                        .moreText{
+                        .moreText {
                             @media screen and (max-width: 1000px) {
                                 text-align: center;
                             }
-                            img{
+                            img {
                                 max-height: 35vh;
 
                                 @media screen and (max-width: 1200px) {
@@ -220,11 +219,40 @@
                                     height: 80em;
                                 }
                             }
+                            &#waterbottleMoreText {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: column;
+                                #moreWBHolder {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-around;
+                                    align-items: center;
+
+                                    .waterbottleImg {
+                                        height: 15em;
+                                        margin: .5em 0;
+                                        border-radius: 15px;
+
+                                        @media screen and (max-width: 1200px) {
+                                            height: 17.5em;
+                                        }
+                                        @media screen and (max-width: 650px) {
+                                            height: 15em;
+                                        }
+                                        @media screen and (min-width: $XLcutoff) {
+                                            height: 22em;
+
+                                        }
+                                    }
+                                }
+                            }
                         }
-                        
+
                         ul {
                             margin: 0;
                         }
+
                         &.expanded {
                             height: 25em;
                             &#lipoLabProduct {
@@ -238,6 +266,19 @@
                                 }
                                 @media screen and (min-width: $XLcutoff) {
                                     height: 55em;
+                                }
+                            }
+                            &#waterBottlesMore {
+                                height: 35em;
+
+                                @media screen and (max-width: 1200px) {
+                                    height: 60em;
+                                }
+                                @media screen and (max-width: 650px) {
+                                    height: 85em;
+                                }
+                                @media screen and (min-width: $XLcutoff) {
+                                    height: 50em;
                                 }
                             }
                         }
