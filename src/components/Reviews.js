@@ -2,7 +2,7 @@ import './reviews.scss';
 
 const reviews = [
     {
-        reviewer: 'Cj',
+        reviewer: 'CJ',
         review: 'She was awesome. Took her time and was friendly, sociable, informative and made it a great day. I can\'t wait to go back.',
         details: 'Ultherapy Treatment for Face and Neck '
     },
@@ -45,7 +45,7 @@ const reviews = [
     {
         reviewer: 'Guest',
         review: 'She is so sweet and good... She makes You feel comfortable I enjoyed my visits and I will be going back again for more treatments',
-        details: 'BREAST/BUTT Lifts '
+        details: 'Breast and Butt Lifts '
     },
     {
         reviewer: 'Guest',
@@ -67,7 +67,7 @@ export default function Reviews() {
                             key={reviewObj.reviewer + i}>
                             <div className='reviewerReview'>"{reviewObj.review}"</div>
                             <div className='reviewerName'>- {reviewObj.reviewer}</div>
-                            <div className='reviewServiceDetails'>{reviewObj.details}</div>
+                            {reviewObj.details && <div className='reviewServiceDetails'>Service: {reviewObj.details}</div> }
 
                         </div>
                     );

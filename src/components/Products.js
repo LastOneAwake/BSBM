@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './products.scss';
 import bpWaterBottles from '../assets/images/icons/blackPinkWaterBottles.jpg';
-import greyWaterBottle from '../assets/images/icons/greyWaterBottle.jpg';
-import greenWaterBottle from '../assets/images/icons/greenWaterBottle.jpg';
+// import greyWaterBottle from '../assets/images/icons/greyWaterBottle.jpg';
+// import greenWaterBottle from '../assets/images/icons/greenWaterBottle.jpg';
 import cuteWaterBottles from '../assets/images/icons/cuteWaterBottles.jpg';
 import lipoInjectionIcon from '../assets/images/icons/lipoLab_supplied.png';
 import lipoImg2 from '../assets/images/icons/lipoImg_2.jpg';
@@ -12,35 +12,35 @@ import lipoImg_treatment from '../assets/images/icons/treatmentImg.png';
 
 
 
-import IMG_5959 from '../assets/images/waterBottles/IMG_5959.jpg';
+// import IMG_5959 from '../assets/images/waterBottles/IMG_5959.jpg';
 // import IMG_5960 from '../assets/images/waterBottles/IMG_5960.jpg';
 // import IMG_5961 from '../assets/images/waterBottles/IMG_5961.jpg';
 // import IMG_5962 from '../assets/images/waterBottles/IMG_5962.jpg';
-// import IMG_5964 from '../assets/images/waterBottles/IMG_5964.jpg';
-import IMG_5966 from '../assets/images/waterBottles/IMG_5966.jpg';
+import blackWithSize from '../assets/images/waterBottles/IMG_5964.jpg';
+// import IMG_5966 from '../assets/images/waterBottles/IMG_5966.jpg';
 // import IMG_5969 from '../assets/images/waterBottles/IMG_5969.jpg';
-import IMG_5994 from '../assets/images/waterBottles/IMG_5994.jpg';
-// import IMG_5997 from '../assets/images/waterBottles/IMG_5997.jpg';
-import IMG_6001 from '../assets/images/waterBottles/IMG_6001.jpg';
+// import IMG_5994 from '../assets/images/waterBottles/IMG_5994.jpg';
+import fourSquare from '../assets/images/waterBottles/IMG_5997.jpg';
+import pinkFrostedHeldUp from '../assets/images/waterBottles/IMG_6001.jpg';
 // import IMG_6003 from '../assets/images/waterBottles/IMG_6003.jpg';
-import IMG_6005 from '../assets/images/waterBottles/IMG_6005.jpg';
+// import IMG_6005 from '../assets/images/waterBottles/IMG_6005.jpg';
 // import IMG_6006 from '../assets/images/waterBottles/IMG_6006.jpg';
 // import IMG_6024 from '../assets/images/waterBottles/IMG_6024.jpg';
-import IMG_6025 from '../assets/images/waterBottles/IMG_6025.jpg';
-import IMG_6026 from '../assets/images/waterBottles/IMG_6026.jpg';
-import IMG_6027 from '../assets/images/waterBottles/IMG_6027.jpg';
-// import IMG_6028 from '../assets/images/waterBottles/IMG_6028.jpg';
+// import IMG_6025 from '../assets/images/waterBottles/IMG_6025.jpg';
+import blackGreyTempSHowing from '../assets/images/waterBottles/IMG_6026.jpg';
+// import IMG_6027 from '../assets/images/waterBottles/IMG_6027.jpg';
+import colorTemps from '../assets/images/waterBottles/IMG_6028.jpg';
 // import IMG_6029 from '../assets/images/waterBottles/IMG_6029.jpg';
 
 
 
 const wbImages = [
-    greyWaterBottle,
-    greenWaterBottle,
+    blackWithSize,
+    fourSquare,
+    pinkFrostedHeldUp,
     cuteWaterBottles,
-    IMG_5966,
-    IMG_6027,
-    IMG_6026
+    blackGreyTempSHowing,
+    colorTemps,
 ]
 
 

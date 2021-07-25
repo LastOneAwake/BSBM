@@ -82,7 +82,7 @@ const laserLipoObj = {
 };
 
 const lipoInjectionObj = {
-    service: 'Lipo Lab injections',
+    service: 'Lipo Lab Injections',
     icon: lipoInjectionIcon,
     description: 'Lipo Lab is a highly effective fat-melting injectable based on Phosphatidyl Choline (PPC). Unlike many other fat-burning injections that only shrink the size of fat cells, this solution permanently dissolves them. It offers an excellent alternative for the reduction and elimination of fat deposits on sites that are slow to respond to physical exercise and surgical procedures (e.g. double chin, abdomen fat). The treatment is painless and incredibly simple.',
 };
